@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 VCS Assist theme, based on _s. Most recent version 0.1.13
 ===
 
@@ -41,3 +42,6 @@ Then, update the stylesheet header in `style.css` and the links in `footer.php` 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+=======
+# vcsassist
+>>>>>>> 4fab03f3dffabc572e8e592b4f24bdbd2b38293b

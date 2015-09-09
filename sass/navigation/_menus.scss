@@ -84,7 +84,7 @@
 
 
 
-@include breakpoint($bp-mobile){
+@include susy-breakpoint($bp-mobile){
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
 		display: block;

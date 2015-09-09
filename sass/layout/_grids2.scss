@@ -23,7 +23,7 @@ $page-container: (
 	@include container($susy 110rem content-box);
 		padding-left: 5rem;
 		padding-right: 5rem;
-	@include breakpoint($bp-mobile) {
+	@include susy-breakpoint($bp-mobile) {
 		padding-left: 0.2rem;
 		padding-right: 0.2rem;
 	};
@@ -48,8 +48,8 @@ header#masthead	{
 		margin-left: gutter();
 	    background: rgb(255, 2555, 255); /* The Fallback */
 	    background: rgba(255, 2555, 255, 0.7);
-		@include breakpoint($bp-screen) {@include span(2 of 5)};
-		@include breakpoint($bp-mobile) {@include span(5 of 5)};
+		@include susy-breakpoint($bp-screen) {@include span(2 of 5)};
+		@include susy-breakpoint($bp-mobile) {@include span(5 of 5)};
 	}
 
 	aside#header-space {
@@ -57,11 +57,11 @@ header#masthead	{
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position: bottom;
-		@include breakpoint($bp-screen) {height: 300px;};
-		@include breakpoint($bp-largescreen) {height: 345px;};
+		@include susy-breakpoint($bp-screen) {height: 300px;};
+		@include susy-breakpoint($bp-largescreen) {height: 345px;};
 		div.widget-serach {
-			@include breakpoint($bp-mobile) {@include span(5 of 5)};
-			@include breakpoint($bp-screen) {@include span(2 of 5 at 3 last);};
+			@include susy-breakpoint($bp-mobile) {@include span(5 of 5)};
+			@include susy-breakpoint($bp-screen) {@include span(2 of 5 at 3 last);};
 		}
 	}
 }
@@ -71,16 +71,16 @@ body.single #content, body.page #content {background-color: $vcsgrey-light;};
 
 // primary content container for pages with sidebar
 #primary {
-	@include breakpoint(min-width $bp-screen) {@include span(3 of 4 border-box no-gutters);}
-	@include breakpoint($bp-mobile) { @include span(4 of 4 border-box omega)};
+	@include susy-breakpoint(min-width $bp-screen) {@include span(3 of 4 border-box no-gutters);}
+	@include susy-breakpoint($bp-mobile) { @include span(4 of 4 border-box omega)};
 }
 // primary content without sidebar
 body.single #primary {
 	@include span(4 of 4 border-box);
 }
 #secondary {
-	@include breakpoint($bp-screen) { @include span(1 of 4 0.05 border-box last);}
-	@include breakpoint($bp-mobile) { @include span(4 of 4 first);};
+	@include susy-breakpoint($bp-screen) { @include span(1 of 4 0.05 border-box last);}
+	@include susy-breakpoint($bp-mobile) { @include span(4 of 4 first);};
 	
 //	@include span(1 of 4 no-gutters border-box  last);
 //	@include susy-breakpoint(max-width 640px, 2) {
@@ -183,8 +183,8 @@ $bp-largescreen: 880px;
 #main-box {
 	@include container(3 $page-container);
 	@include trailer(1);
-	@include breakpoint($bp-mobile) {ul li {@include span(2 of 2)}};
-	@include breakpoint($bp-screen $bp-largescreen) {
+	@include susy-breakpoint($bp-mobile) {ul li {@include span(2 of 2)}};
+	@include susy-breakpoint($bp-screen $bp-largescreen) {
 		ul li {
 			@include gallery(1.5 of 3 $page-container);
 			min-height: 29rem;
@@ -196,7 +196,7 @@ $bp-largescreen: 880px;
 		    }
 		}
 	}
-	@include breakpoint($bp-largescreen) {
+	@include susy-breakpoint($bp-largescreen) {
 		ul li {
 			@include gallery(1 of 3);
 			min-height: 29rem;

@@ -15,16 +15,6 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<!--
-Compass CSS files added below
--->
-<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/screen.css" media="screen, projection" rel="stylesheet"  type="text/css" />
- 
-  <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/print.css" media="print" rel="stylesheet" type="text/css" />
-  <!--[if IE]>
-      <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <![endif]-->
-
 <?php wp_head(); ?>
 
 </head>

@@ -1,13 +1,24 @@
 // @import '../../../../bower_components/breakpoint/breakpoint/breakpoint';
-@import '../../../../bower_components/susy/sass/susy';
-@import '../../../../bower_components/sass-web-fonts/web-fonts';
-@import '../../../../bower_components/vertical-rhythms-without-compass/vertical-rhythms';
-@import '../../../../bower_components/compass-mixins/lib/compass/css3/border-radius';
-@import '../../../../bower_components/compass-mixins/lib/compass/css3/images';
-@import '../../../../bower_components/compass-mixins/lib/compass/css3/opacity';
-@import '../../../../bower_components/compass-mixins/lib/compass/css3/box-shadow';
-// @import join($bower, 'comass-mixins/lib/css3/border-radius');
 
-// @import "compass"
+// @import '../../../../bower_components/bower-compass-core/compass/stylesheets/compass';
+// @import '../../../../bower_components/susy/sass/susy';
+// @import '../../../../bower_components/sass-web-fonts/web-fonts';
+// @import '../../../../bower_components/vertical-rhythms-without-compass/vertical-rhythms';
+// @import '../../../../bower_components/compass-mixins/lib/compass/css3';
+// @import '../../../../bower_components/compass-mixins/lib/compass/typography/vertical-rhythm';
 
-// @import "compass/css3"
+// @import '../../../../bower_components/compass-mixins/lib/compass/css3/border-radius';
+// @import '../../../../bower_components/compass-mixins/lib/compass/css3/images';
+// @import '../../../../bower_components/compass-mixins/lib/compass/css3/opacity';
+// @import '../../../../bower_components/compass-mixins/lib/compass/css3/box-shadow';
+
+@import 'susy';
+@import 'web-fonts';
+@import 'vertical-rhythms';
+// @import 'compass/css3';
+/**
+ make myu own mixin for:
+    [x] border-radius
+    [] box shaddow
+    [] linear gradient
+    */

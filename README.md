@@ -1,5 +1,11 @@
-VCS Assist theme, based on _s. Most recent version 0.1.13
-===
+VCS Assist theme, based on s. Most recent version 0.1.16
+
+
+
+Thu 10 Sep 2015 21:29:19 BST
+#Business directory
+Currently working on the business directory.
+  need to find the good way of displaying it all.
 
 Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 

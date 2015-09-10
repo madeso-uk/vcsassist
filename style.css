@@ -516,8 +516,7 @@ a {
   clear: both;
   display: block;
   float: left;
-  width: 100%;
-  margin-bottom: 2.25em; }
+  width: 100%; }
   .main-navigation ul {
     width: 100%;
     float: left;
@@ -872,6 +871,14 @@ body.single #content, body.page #content {
   background-color: #F5F5F5; }
 
 @media (min-width: 680px) {
+  #primary.full-width {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; } }
+@media (min-width: 680px) {
   #primary {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -987,8 +994,7 @@ $bp-largescreen: 880px;
 #masthead {
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 1.8em; }
+  margin-right: auto; }
   #masthead:after {
     content: " ";
     display: block;
@@ -1007,6 +1013,11 @@ $bp-largescreen: 880px;
     .partner-logos .logoother p {
       font-size: 0.625em;
       line-height: 2.4em; }
+
+.home main-navigation {
+  margin-bottom: 2.25em; }
+.home #masthead {
+  padding-bottom: 1.8em; }
 
 #main-box {
   max-width: 100%;

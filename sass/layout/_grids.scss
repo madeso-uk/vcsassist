@@ -54,11 +54,12 @@ header#masthead	{
 	}
 }
 
-// whole post conent
+// whole post content
 body.single #content, body.page #content {background-color: $vcsgrey-light;};
 
 // primary content container for pages with sidebar
 #primary {
+	&.full-width {@include susy-breakpoint(min-width $bp-screen) {@include span(4 of 4 border-box no-gutters);}}
 	@include susy-breakpoint(min-width $bp-screen) {@include span(3 of 4 border-box no-gutters);}
 	@include susy-breakpoint($bp-mobile) { @include span(4 of 4 border-box omega)};
 }
@@ -152,7 +153,6 @@ $bp-largescreen: 880px;
 
 #masthead {
 	@include container(5);
-	@include padding-trailer(1.2);
 	ul.nav-menu {
 	
 	}
@@ -164,6 +164,12 @@ $bp-largescreen: 880px;
 	.logo { @include span(1 of 6);}
 	.logoother {@include span(2 of 6 last);
 		p{@include adjust-font-size-to(10px);}}
+}
+
+// partner logo push page down
+.home {
+  main-navigation { @include margin-trailer(1.5);}
+  #masthead { @include padding-trailer(1.2);}
 }
 
 //asides - #main-box and #main-long widget areas

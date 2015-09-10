@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Empty testing template
+* Template Name: Developments testing template
 * */
 
 /**
@@ -20,4 +20,3 @@
 
 
 
-?>

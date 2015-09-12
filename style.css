@@ -1266,7 +1266,7 @@ footer.entry-footer {
 10.5 Business Database stuff
 --------------------------------------------------------------*/
 .wpbdp-listing-excerpt {
-  background-color: red !important; }
+  background-color: violet !important; }
 
 .wpbdp-listing-excerpt.odd {
   background-color: teal !important; }

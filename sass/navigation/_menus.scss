@@ -49,6 +49,7 @@
 		&.current_page_item {
 			background-color: $vcsgrey;
 			a {color: $color__text-screen;}
+			li a {color: $color__text-alt;}
 			&:hover > a {background-color: $vcsgrey;}
 		};
 		float: left;

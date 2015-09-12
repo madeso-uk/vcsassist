@@ -168,8 +168,10 @@ $bp-largescreen: 880px;
 
 // partner logo push page down
 .home {
-  main-navigation { @include margin-trailer(1.5);}
-  #masthead { @include padding-trailer(1.2);}
+  .partner-logos {
+    @include span(full nest);
+    @include rhythm-margins(1.5);
+  }
 }
 
 //asides - #main-box and #main-long widget areas

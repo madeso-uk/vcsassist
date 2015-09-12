@@ -4,7 +4,7 @@ Theme URI: http://www.madeso.uk/
 Author: madeso
 Author URI: http://www.madeso.uk/
 Description: VCS Assist theme is the Wordpress theme for www.vcsassist.org.uk. <br />Most revent version can be found https://github.com/oh-/vcsassist/archive/master.zip<br />Recomended to install VCS Assist site plugin along side for full functionality which can be found https://github.com/oh-/vcsassist/archive/p-master.zip <br />This is theme is built on Underscores http://underscores.me/ Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 0.1.16
+Version: 0.2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: _s
@@ -221,8 +221,8 @@ a.post-title, .tagcloud a, ul.nav-menu a {
 h1.entry-title {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
-  padding-left: 2.38095%;
-  padding-right: 2.38095%; }
+  margin-left: 4.18327%;
+  margin-right: 4.18327%; }
 
 body.single div.tptn_counter, body.single footer.entry-footer, body.single nav.post-navigation {
   background-color: #D3D3D3 !important; }
@@ -326,10 +326,10 @@ footer .site-info, footer .partner-logos p {
   line-height: 2.66667em; }
 
 div.entry-content p {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  margin-left: 5.01992%;
+  margin-right: 5.01992%;
   font-size: 1em;
-  line-height: 2.25em;
+  line-height: 1.5em;
   margin-bottom: 2.25em; }
 div.entry-content blockquote {
   padding-left: 7.5rem;
@@ -551,6 +551,8 @@ a {
       background-color: #D3D3D3; }
       .main-navigation li.current_page_item a {
         color: #1B3B50; }
+      .main-navigation li.current_page_item li a {
+        color: #ffffff; }
       .main-navigation li.current_page_item:hover > a {
         background-color: #D3D3D3; }
     .main-navigation li:hover > a {
@@ -1014,10 +1016,13 @@ $bp-largescreen: 880px;
       font-size: 0.625em;
       line-height: 2.4em; }
 
-.home main-navigation {
+.home .partner-logos {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 2.25em;
   margin-bottom: 2.25em; }
-.home #masthead {
-  padding-bottom: 1.8em; }
 
 #main-box {
   max-width: 100%;
@@ -1256,6 +1261,15 @@ footer.entry-footer {
 
 .bypostauthor {
   display: block; }
+
+/*--------------------------------------------------------------
+10.5 Business Database stuff
+--------------------------------------------------------------*/
+.wpbdp-listing-excerpt {
+  background-color: red !important; }
+
+.wpbdp-listing-excerpt.odd {
+  background-color: teal !important; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

@@ -95,8 +95,9 @@ footer {
 
  div.entry-content {
 	p {
-		@include gutters(10rem inside);
-		@include adjust-font-size-to(16px, 1.5);
+		// @include gutters(10rem inside);
+    @include squish(0.6 of 12);
+		@include adjust-font-size-to(16px, 1);
 //		@include testing(red);
 		@include trailer(1.5);
 	}

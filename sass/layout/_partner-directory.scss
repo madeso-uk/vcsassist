@@ -1,0 +1,4 @@
+.wpbdp-listing-excerpt {
+  @include testing;
+}
+.wpbdp-listing-excerpt.odd {@include testing(teal);}

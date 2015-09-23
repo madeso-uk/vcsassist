@@ -1,0 +1,63 @@
+
+/**
+ * Default CSS Styles for the Category Posts Widget plugin Version: 4.0i
+ * 
+ */
+
+.widget_listcategorypostswidget {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .post-date {
+    font-style: italic;
+    margin-bottom: 0;
+  }
+  img {
+    float: left;
+    margin: 5px 10px 0 0;
+  }
+  ul li {
+    list-style: none;
+    list-style-type: none;
+//    margin: 3px 0;
+//    padding: 3px 0;
+    border-bottom: 1px solid #ccc;
+	position: relative;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .more-link {
+    display: inline;
+  }
+  .post-entry {
+    padding: 0 0 5px 0;
+    overflow: hidden;
+  }
+  .comment-num:has() {}
+}
+
+// Widget type face and copy
+h1.category-title {
+  a {color: $vcsblue;
+    &:hover {color: $vcsgreen;}
+  }
+  @include adjust-font-size-to(24px);
+}
+.widget ul li {
+	@include adjust-leading-to(0.5, 10px);
+	.lcp_excerpt { @include adjust-font-size-to(12px);
+		@include gutters(1.5rem inside);
+	}
+	p.post-date {
+		@include adjust-font-size-to(9px);
+	}
+	h4.post-title {
+		@include adjust-font-size-to(14px);
+		font-weight: bold;
+	}
+  .read-more {@include adjust-font-size-to(12px)}
+};

@@ -15,12 +15,11 @@
 
 get_header(); ?>
 
-	<div id="primary" class="full-width content-area">
+	<div id="primary" class="full-width content-area partner-directory-page">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php /* get_template_part( 'content', 'page' ); */ ?>
-            <?php wpbdp_render_listing(null, 'single', false) ?>
+				<?php get_template_part( 'content', 'page' ); ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
@@ -32,6 +31,8 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
+      <?php echo do_shortcode( '[businessdirectory-listings]' ) ?>
+      <?php // wpbdp_render_listing(null, 'single', false) ?>
 	</div><!-- #primary -->
 <?php get_sidebar('directory'); ?>
 <?php get_footer(); ?>

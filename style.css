@@ -245,6 +245,11 @@ body.single article header.entry-header h1 {
   padding-left: 1em;
   padding-right: 1em; }
 
+.wpbdp-page .listings header {
+  font-family: PMN_Roman, sans-serif; }
+  .wpbdp-page .listings header * {
+    color: #ffffff; }
+
 p {
   font-size: 1em;
   line-height: 1.5em; }
@@ -305,21 +310,6 @@ small {
 
 big {
   font-size: 125%; }
-
-.widget ul li {
-  line-height: 1.2em; }
-  .widget ul li p {
-    font-size: 0.75em;
-    line-height: 2em;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem; }
-  .widget ul li p.post-date {
-    font-size: 0.5625em;
-    line-height: 2.66667em; }
-  .widget ul li a.post-title {
-    font-size: 0.875em;
-    line-height: 1.71429em;
-    font-weight: bold; }
 
 footer .site-info, footer .partner-logos p {
   font-size: 0.5625em;
@@ -1253,6 +1243,58 @@ footer.entry-footer {
 /*--------------------------------------------------------------
 10.4 All Widgets
 --------------------------------------------------------------*/
+/**
+ * Default CSS Styles for the Category Posts Widget plugin Version: 4.0i
+ * 
+ */
+.widget_listcategorypostswidget * {
+  margin: 0;
+  padding: 0; }
+.widget_listcategorypostswidget .post-date {
+  font-style: italic;
+  margin-bottom: 0; }
+.widget_listcategorypostswidget img {
+  float: left;
+  margin: 5px 10px 0 0; }
+.widget_listcategorypostswidget ul li {
+  list-style: none;
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+  position: relative; }
+  .widget_listcategorypostswidget ul li:last-child {
+    border-bottom: none; }
+.widget_listcategorypostswidget .more-link {
+  display: inline; }
+.widget_listcategorypostswidget .post-entry {
+  padding: 0 0 5px 0;
+  overflow: hidden; }
+
+h1.category-title {
+  font-size: 1.5em;
+  line-height: 2em; }
+  h1.category-title a {
+    color: #1B3B50; }
+    h1.category-title a:hover {
+      color: #69BE28; }
+
+.widget ul li {
+  line-height: 1.2em; }
+  .widget ul li .lcp_excerpt {
+    font-size: 0.75em;
+    line-height: 2em;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; }
+  .widget ul li p.post-date {
+    font-size: 0.5625em;
+    line-height: 2.66667em; }
+  .widget ul li h4.post-title {
+    font-size: 0.875em;
+    line-height: 1.71429em;
+    font-weight: bold; }
+  .widget ul li .read-more {
+    font-size: 0.75em;
+    line-height: 2em; }
+
 /*--------------------------------------------------------------
 10.4 Comments
 --------------------------------------------------------------*/
@@ -1265,11 +1307,83 @@ footer.entry-footer {
 /*--------------------------------------------------------------
 10.5 Business Database stuff
 --------------------------------------------------------------*/
-.wpbdp-listing-excerpt {
-  background-color: violet !important; }
+#primary.partner-directory-page {
+  width: 74.9004%;
+  float: right;
+  margin-right: 0; }
 
-.wpbdp-listing-excerpt.odd {
-  background-color: teal !important; }
+#sidebar-vcspd {
+  width: 24.7012%;
+  float: left;
+  margin-right: 0.39841%; }
+
+#wpbdp-view-listings-page .wpbdp-listing-excerpt {
+  background-color: #f1f1f1; }
+#wpbdp-view-listings-page .wpbdp-listing-excerpt.odd {
+  background-color: #D3D3D3; }
+#wpbdp-view-listings-page .wpbdp-listing {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative; }
+#wpbdp-view-listings-page .pd-column, #wpbdp-view-listings-page .field-value {
+  float: left;
+  padding-left: 0.27322%;
+  padding-right: 0.27322%; }
+  #wpbdp-view-listings-page .pd-column:nth-child(3n + 1), #wpbdp-view-listings-page .field-value:nth-child(3n + 1) {
+    width: 22.40437%;
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both; }
+  #wpbdp-view-listings-page .pd-column:nth-child(3n + 2), #wpbdp-view-listings-page .field-value:nth-child(3n + 2) {
+    width: 33.33333%;
+    margin-left: 22.40437%;
+    margin-right: -100%;
+    clear: none; }
+  #wpbdp-view-listings-page .pd-column:nth-child(3n + 3), #wpbdp-view-listings-page .field-value:nth-child(3n + 3) {
+    width: 44.2623%;
+    margin-left: 55.7377%;
+    margin-right: -100%;
+    clear: none; }
+#wpbdp-view-listings-page .wpbdp-page-content .listings {
+  border: 1px solid #1B3B50; }
+#wpbdp-view-listings-page .wpbdp-page-content header {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #1B3B50; }
+#wpbdp-view-listings-page .wpbdp-page-content .wpbdp-listing.excerpt {
+  border-top: 1px solid #1B3B50; }
+#wpbdp-view-listings-page .wpbdp-page-content .field-value {
+  border-right: 1px solid #1B3B50;
+  border-top: 1px solid #1B3B50; }
+  #wpbdp-view-listings-page .wpbdp-page-content .field-value:last-child {
+    border-right: none; }
+#wpbdp-view-listings-page .listing-details {
+  width: 97.49004%;
+  float: right;
+  margin-right: 0; }
+#wpbdp-view-listings-page .listing-actions {
+  width: 1.67331%;
+  float: left;
+  margin-right: 0.39683%;
+  right: -1.67331%; }
+  #wpbdp-view-listings-page .listing-actions > a {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+    font-size: 0.1875em;
+    line-height: 2.4em; }
+    #wpbdp-view-listings-page .listing-actions > a:nth-child(1n) {
+      background-color: green !important; }
+    #wpbdp-view-listings-page .listing-actions > a:nth-child(2n+2) {
+      background-color: orange !important; }
+    #wpbdp-view-listings-page .listing-actions > a:nth-child(3n) {
+      background-color: red !important; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

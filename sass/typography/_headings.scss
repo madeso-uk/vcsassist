@@ -79,5 +79,16 @@ body.single {
 			color: $color__text-alt;
 			@include gutters(2em inside);
 		}
+  }
 }
+
+
+// directory page
+.wpbdp-page {
+  .listings {
+    header {
+      font-family: $font__heading, sans-serif;
+      * { color: $color__text-alt;}
+    }
+  }
 }

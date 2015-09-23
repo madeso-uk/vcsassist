@@ -74,20 +74,6 @@ big {
 	font-size: 125%;
 }
 
-// Widget typer face and copy
-.widget ul li {
-	@include adjust-leading-to(0.5, 10px);
-	p { @include adjust-font-size-to(12px);
-		@include gutters(1.5rem inside);
-	}
-	p.post-date {
-		@include adjust-font-size-to(9px);
-	}
-	a.post-title {
-		@include adjust-font-size-to(14px);
-		font-weight: bold;
-	}
-};
 
 footer {
 	.site-info, .partner-logos p { @include adjust-font-size-to(9px);}
@@ -95,10 +81,8 @@ footer {
 
  div.entry-content {
 	p {
-		// @include gutters(10rem inside);
     @include squish(0.6 of 12);
 		@include adjust-font-size-to(16px, 1);
-//		@include testing(red);
 		@include trailer(1.5);
 	}
 	blockquote {

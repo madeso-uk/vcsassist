@@ -86,9 +86,12 @@ body.single {
 // directory page
 .wpbdp-page {
   .listings {
-    header {
+    .wpbdp-pagination, header {
       font-family: $font__heading, sans-serif;
-      * { color: $color__text-alt;}
+      background-color: $vcsblue;
+      * {
+        color: $color__text-alt;
+      }
     }
   }
 }

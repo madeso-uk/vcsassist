@@ -245,9 +245,10 @@ body.single article header.entry-header h1 {
   padding-left: 1em;
   padding-right: 1em; }
 
-.wpbdp-page .listings header {
-  font-family: PMN_Roman, sans-serif; }
-  .wpbdp-page .listings header * {
+.wpbdp-page .listings .wpbdp-pagination, .wpbdp-page .listings header {
+  font-family: PMN_Roman, sans-serif;
+  background-color: #1B3B50; }
+  .wpbdp-page .listings .wpbdp-pagination *, .wpbdp-page .listings header * {
     color: #ffffff; }
 
 p {
@@ -1313,6 +1314,7 @@ h1.category-title {
   margin-right: 0; }
 
 #sidebar-vcspd {
+  margin-top: 1.5em;
   width: 24.7012%;
   float: left;
   margin-right: 0.39841%; }
@@ -1352,38 +1354,62 @@ h1.category-title {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0;
-  background-color: #1B3B50; }
-#wpbdp-view-listings-page .wpbdp-page-content .wpbdp-listing.excerpt {
-  border-top: 1px solid #1B3B50; }
+  margin-right: 0; }
 #wpbdp-view-listings-page .wpbdp-page-content .field-value {
-  border-right: 1px solid #1B3B50;
-  border-top: 1px solid #1B3B50; }
+  border-right: 1px solid #1B3B50; }
   #wpbdp-view-listings-page .wpbdp-page-content .field-value:last-child {
     border-right: none; }
 #wpbdp-view-listings-page .listing-details {
-  width: 97.49004%;
-  float: right;
+  width: 100%;
+  float: left;
+  margin-left: 0;
   margin-right: 0; }
 #wpbdp-view-listings-page .listing-actions {
-  width: 1.67331%;
+  width: 2.11155%;
   float: left;
-  margin-right: 0.39683%;
-  right: -1.67331%; }
+  margin-right: 0.39841%;
+  position: absolute; }
   #wpbdp-view-listings-page .listing-actions > a {
-    width: 100%;
+    width: 32.25806%;
     float: left;
-    margin-left: 0;
-    margin-right: 0;
-    display: block;
+    max-height: 1.5em;
+    overflow: hidden;
     font-size: 0.1875em;
     line-height: 2.4em; }
-    #wpbdp-view-listings-page .listing-actions > a:nth-child(1n) {
+    #wpbdp-view-listings-page .listing-actions > a:nth-child(3n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    #wpbdp-view-listings-page .listing-actions > a:nth-child(3n + 2) {
+      margin-left: 33.87097%;
+      margin-right: -100%;
+      clear: none; }
+    #wpbdp-view-listings-page .listing-actions > a:nth-child(3n + 3) {
+      margin-left: 67.74194%;
+      margin-right: -100%;
+      clear: none; }
+    #wpbdp-view-listings-page .listing-actions > a.view-listing {
       background-color: green !important; }
-    #wpbdp-view-listings-page .listing-actions > a:nth-child(2n+2) {
+    #wpbdp-view-listings-page .listing-actions > a.edit-listing {
       background-color: orange !important; }
-    #wpbdp-view-listings-page .listing-actions > a:nth-child(3n) {
+    #wpbdp-view-listings-page .listing-actions > a.delete-listing {
       background-color: red !important; }
+#wpbdp-view-listings-page .wpbdp-pagination {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  #wpbdp-view-listings-page .wpbdp-pagination span {
+    width: 48.78049%;
+    float: left;
+    margin-right: 2.43902%; }
+    #wpbdp-view-listings-page .wpbdp-pagination span.next {
+      float: right;
+      margin-right: 0; }
+      #wpbdp-view-listings-page .wpbdp-pagination span.next:before {
+        content: ' | '; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

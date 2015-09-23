@@ -5,6 +5,7 @@ $listing-border: 1px solid $vcsblue;
   @include span(9 of 12 nest last);
 }
 #sidebar-vcspd {
+  margin-top: 1.5em; //keeping the sidebare aligned with content
   @include span(3 of 12 alpha);
 }
 
@@ -29,14 +30,12 @@ $listing-border: 1px solid $vcsblue;
     }
     header {
       @include span(full nest clearfix);
-      background-color: $vcsblue;
     }
     .wpbdp-listing.excerpt {
-      border-top: $listing-border;
+      // border-top: $listing-border;
     }
     .field-value {
       border-right: $listing-border;
-      border-top: $listing-border;
       &:last-child{
         border-right: none;
       }
@@ -44,20 +43,27 @@ $listing-border: 1px solid $vcsblue;
   }
 
   .listing-details {
-    @include span(11.7 of 12 nested omega);
+    @include span(full nested);
   }
   .listing-actions {
-    @include span(0.2 of 12 alpha nested wide);
-    // HERE span(0.2 of 12 alpha nested wide)*-1;
-    // position: absolute;
+    @include span(0.3 of 12 alpha nested);
+    position: absolute;
     // left: span(0.3 of 12)*-1; 
     >a {
-      @include span(1 of 1);
-      display: block;
+      @include gallery(1 of 3);
+      max-height: rhythm(1);
+      overflow: hidden;
       @include adjust-font-size-to(3px, 0.3);
-      &:nth-child(1n) { @include testing(green);}
-      &:nth-child(2n+2) { @include testing(orange);}
-      &:nth-child(3n) { @include testing(red);}
+      &.view-listing { @include testing(green) }
+      &.edit-listing { @include testing(orange);}
+      &.delete-listing { @include testing(red);}
     }
   }
-}
+  .wpbdp-pagination {
+    @include full(nested);
+    span {
+      @include span(1 of 2);
+      &.next {@include last; &:before {content: ' | '}}
+    }
+  }
+} // end of Listing view

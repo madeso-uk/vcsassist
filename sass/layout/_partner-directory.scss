@@ -1,4 +1,4 @@
-$listing-border: 1px solid $vcsblue;
+$listing-border: 1px solid darken($vcsgrey, 10);
 
 // General Page Layout
 #primary.partner-directory-page {
@@ -7,9 +7,24 @@ $listing-border: 1px solid $vcsblue;
 #sidebar-vcspd {
   margin-top: 1.5em; //keeping the sidebare aligned with content
   @include span(3 of 12 alpha);
+  .wpbdp-categories {
+    list-style-type: none;
+    // margin: 0;
+    // padding: 0;
+  }
+
+  // ul.wpbdp-categories > li.cat-item {
+  .button {
+    @include button($color__background-button, 4px);
+    border: 1px solid darken($color__background-button, 10);
+    @include span(1 of 1 inside narrow);
+    @include rhythm(0.2, 0.2);
+    text-align: center;
+  }
 }
 
-#wpbdp-view-listings-page{
+#wpbdp-view-listings-page {
+  @include squish(0.6 of 12);
     // Partner Listing Page
   .wpbdp-listing-excerpt {
     background-color: $color__background-screen;
@@ -26,7 +41,7 @@ $listing-border: 1px solid $vcsblue;
   }
   .wpbdp-page-content {
     .listings {
-      border: $listing-border;
+      // border: $listing-border;
     }
     header {
       @include span(full nest clearfix);
@@ -61,9 +76,11 @@ $listing-border: 1px solid $vcsblue;
   }
   .wpbdp-pagination {
     @include full(nested);
+    @include margin-trailer(2);
     span {
-      @include span(1 of 2);
+      @include span(1 of 2 narrow);
       &.next {@include last; &:before {content: ' | '}}
+      &.prev {text-align: right;}
     }
   }
 } // end of Listing view

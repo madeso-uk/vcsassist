@@ -39,6 +39,21 @@
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
+@mixin button($butcol: $color__background-button, $corner: 2em) {
+  background-color: $butcol;
+  box-shadow: none;
+  text-shadow: none;
+	&:hover {
+    background-color: $vcsblue;
+    color: $color__text-alt;
+    & :link {
+      color: $color__text-alt;
+    }
+  }
+	@include nolink;
+	border-radius: $corner;
+
+}
 /*
  * Development helpers
  */

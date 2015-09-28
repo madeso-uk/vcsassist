@@ -1,12 +1,26 @@
 $listing-border: 1px solid darken($vcsgrey, 10);
 
-// General Page Layout
+// General Page Layout Breaoipoints
+.sidebar.partner-directory {
+  @include span(full);
+  @include susy-breakpoint($bp-mobile) {
+    @include span(4 of 12 alpha nest);
+  }
+  @include susy-breakpoint($bp-screen) {
+    @include span(3 of 12 alpha);
+  }
+}
 #primary.partner-directory-page {
-  @include span(9 of 12 nest last);
+  @include span(full nest last);
+  @include susy-breakpoint($bp-mobile) {
+    @include span(8 of 12 nest omega);
+  }
+  @include susy-breakpoint($bp-screen) {
+    @include span(9 of 12 nest omega);
+  }
 }
 #sidebar-vcspd {
   margin-top: 1.5em; //keeping the sidebare aligned with content
-  @include span(3 of 12 alpha);
   .wpbdp-categories {
     list-style-type: none;
     // margin: 0;
@@ -15,14 +29,18 @@ $listing-border: 1px solid darken($vcsgrey, 10);
 
   // ul.wpbdp-categories > li.cat-item {
   .button {
+    @include span(full border-box);
+    @include susy-breakpoint($bp-screen){
+      @include span(1 of 1 inside narrow);
+    }
     @include button($color__background-button, 4px);
+
+    // other
     border: 1px solid darken($color__background-button, 10);
-    @include span(1 of 1 inside narrow);
     @include rhythm(0.2, 0.2);
     text-align: center;
   }
 }
-
 #wpbdp-view-listings-page {
   @include squish(0.6 of 12);
     // Partner Listing Page

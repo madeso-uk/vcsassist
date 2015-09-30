@@ -20,7 +20,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<?php get_template_part( 'sidebar', 'google' ); ?>
+  <?php if (current_user_can('editor')) {
+    get_sidebar( 'google' ); 
+  }; ?>
 <div id="page" class="hfeed site">
 <div id="page-wrap">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_s' ); ?></a>

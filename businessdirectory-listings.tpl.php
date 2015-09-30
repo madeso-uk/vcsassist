@@ -6,7 +6,7 @@
 $query = isset( $query ) ? $query : wpbdp_current_query();
 ?>
 <div id="wpbdp-view-listings-page" class="wpbdp-view-listings-page wpbdp-page <?php echo join(' ', $__page__['class']); ?>">
-
+in the loop
     <?php if (!isset($stickies)) $stickies = null; ?>
     <?php if (!isset($excludebuttons)) $excludebuttons = true; ?>
 
@@ -28,12 +28,13 @@ $query = isset( $query ) ? $query : wpbdp_current_query();
         <?php else: ?>
             <div class="listings">
               <header>
-                <div class="pd-column">Organisation Title</div>  
-                <div class="pd-column">Org info 2</div>  
-                <div class="pd-column">Org info 3</div>  
+                <div class="pd-column">Organisation Name</div>  
+                <div class="pd-column">Fields</div>  
               </header>
+<?php echo do_shortcode('[catlist template="vcs_partner_directory" post_type='. WPBDP_POST_TYPE . ']'); ?>
                 <?php while ( $query->have_posts() ): $query->the_post(); ?>
-                    <?php echo wpbdp_render_listing(null, 'excerpt'); ?>
+<?php echo get_the_title(); ?>
+                    <?php // echo wpbdp_render_listing(null, 'excerpt'); ?>
                 <?php endwhile; ?>
 
                 <div class="wpbdp-pagination">

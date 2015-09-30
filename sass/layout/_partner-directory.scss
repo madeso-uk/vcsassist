@@ -55,7 +55,7 @@ $listing-border: 1px solid darken($vcsgrey, 10);
     position: relative;
   }
   .pd-column, .field-value {
-    @include gallery(1 of (2 3 4) inside);
+    @include gallery(1 of (1 3) inside);
   }
   .wpbdp-page-content {
     .listings {
@@ -100,5 +100,12 @@ $listing-border: 1px solid darken($vcsgrey, 10);
       &.next {@include last; &:before {content: ' | '}}
       &.prev {text-align: right;}
     }
+  }
+  pre.testing {
+    width: span(full);
+    left: 0;
+    @include pad(1 of 12);
+    position: absolute;
+    z-index: 2;
   }
 } // end of Listing view

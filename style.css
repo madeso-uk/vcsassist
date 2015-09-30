@@ -1383,21 +1383,16 @@ h1.category-title {
     position: relative; }
   #wpbdp-view-listings-page .pd-column, #wpbdp-view-listings-page .field-value {
     float: left;
-    padding-left: 0.27322%;
-    padding-right: 0.27322%; }
-    #wpbdp-view-listings-page .pd-column:nth-child(3n + 1), #wpbdp-view-listings-page .field-value:nth-child(3n + 1) {
-      width: 22.40437%;
+    padding-left: 0.60976%;
+    padding-right: 0.60976%; }
+    #wpbdp-view-listings-page .pd-column:nth-child(2n + 1), #wpbdp-view-listings-page .field-value:nth-child(2n + 1) {
+      width: 25.60976%;
       margin-left: 0;
       margin-right: -100%;
       clear: both; }
-    #wpbdp-view-listings-page .pd-column:nth-child(3n + 2), #wpbdp-view-listings-page .field-value:nth-child(3n + 2) {
-      width: 33.33333%;
-      margin-left: 22.40437%;
-      margin-right: -100%;
-      clear: none; }
-    #wpbdp-view-listings-page .pd-column:nth-child(3n + 3), #wpbdp-view-listings-page .field-value:nth-child(3n + 3) {
-      width: 44.2623%;
-      margin-left: 55.7377%;
+    #wpbdp-view-listings-page .pd-column:nth-child(2n + 2), #wpbdp-view-listings-page .field-value:nth-child(2n + 2) {
+      width: 74.39024%;
+      margin-left: 25.60976%;
       margin-right: -100%;
       clear: none; }
   #wpbdp-view-listings-page .wpbdp-page-content header {
@@ -1463,6 +1458,13 @@ h1.category-title {
           content: ' | '; }
       #wpbdp-view-listings-page .wpbdp-pagination span.prev {
         text-align: right; }
+  #wpbdp-view-listings-page pre.testing {
+    width: 100%;
+    left: 0;
+    padding-left: 8.36653%;
+    padding-right: 8.36653%;
+    position: absolute;
+    z-index: 2; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

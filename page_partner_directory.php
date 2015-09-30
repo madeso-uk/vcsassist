@@ -14,8 +14,8 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="full-width content-area partner-directory-page">
+<?php get_sidebar('directory'); ?>
+	<div id="primary" class="with-sidebar content-area partner-directory-page">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -31,8 +31,7 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
-      <?php echo do_shortcode( '[businessdirectory-listings]' ) ?>
-      <?php // wpbdp_render_listing(null, 'single', false) ?>
+<?php 
+?>
 	</div><!-- #primary -->
-<?php get_sidebar('directory'); ?>
 <?php get_footer(); ?>

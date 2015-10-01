@@ -31,10 +31,9 @@ in the loop
                 <div class="pd-column">Organisation Name</div>  
                 <div class="pd-column">Fields</div>  
               </header>
-<?php echo do_shortcode('[catlist template="vcs_partner_directory" post_type='. WPBDP_POST_TYPE . ']'); ?>
                 <?php while ( $query->have_posts() ): $query->the_post(); ?>
-<?php echo get_the_title(); ?>
-                    <?php // echo wpbdp_render_listing(null, 'excerpt'); ?>
+                    <?php echo get_the_title(); ?>
+                    <?php echo wpbdp_render_listing(null, 'excerpt'); ?>
                 <?php endwhile; ?>
 
                 <div class="wpbdp-pagination">

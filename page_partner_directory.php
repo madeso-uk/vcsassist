@@ -14,12 +14,11 @@
  */
 
 get_header(); ?>
-<?php get_sidebar('directory'); ?>
 	<div id="primary" class="with-sidebar content-area partner-directory-page">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'content', 'directorypage' ); ?>
+				<?php get_template_part( 'content', 'page' ); ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
@@ -31,7 +30,6 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
-<?php 
-?>
 	</div><!-- #primary -->
+<?php get_sidebar('directory'); ?>
 <?php get_footer(); ?>

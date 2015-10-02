@@ -61,41 +61,15 @@ foreach ($this->catlist->get_categories_posts() as $single){
 
   //Show the title and link to the post:
   $lcp_display_output .= $this->get_post_title($single, 'h4', 'lcp_post');
+// $label = get_label(''); 
+// if($label){
+//  $lcp_display_output .=  $label;
+// } else{
+//     // Do something
+// }
 
-  //Show comments:
-  $lcp_display_output .= $this->get_comments($single);
-
-  //Show date:
-  $lcp_display_output .= ' ' . $this->get_date($single);
-
-  //Show date modified:
-  $lcp_display_output .= ' ' . $this->get_modified_date($single);
-
-  //Show author
-  $lcp_display_output .= $this->get_author($single);
-
-  //Custom fields:
-  $lcp_display_output .= $this->get_custom_fields($single);
-
-  //Post Thumbnail
-  $lcp_display_output .= $this->get_thumbnail($single);
-
-  /**
-   * Post content - Example of how to use tag and class parameters:
-   * This will produce:<p class="lcp_content">The content</p>
-   */
-  $lcp_display_output .= $this->get_content($single, 'p', 'lcp_content');
-
-  /**
-   * Post content - Example of how to use tag and class parameters:
-   * This will produce:<div class="lcp_excerpt">The content</div>
-   */
-  $lcp_display_output .= $this->get_excerpt($single, 'div', 'lcp_excerpt');
-
-
-  // Get Posts "More" link:
-  $lcp_display_output .= $this->get_posts_morelink($single);
-
+  // $lcp_display_output .= $this->get_label();
+// customfield_display="Mood" customfield_display_name="no"
   //Close li tag
   $lcp_display_output .= '</li>';
 }

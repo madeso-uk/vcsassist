@@ -1,0 +1,7 @@
+pre.testing {
+  width: span(full);
+  left: 0;
+  @include pad(1 of 12);
+  position: absolute;
+  z-index: 2;
+}

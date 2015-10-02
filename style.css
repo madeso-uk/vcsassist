@@ -45,6 +45,14 @@ html {
   font-size: 100%;
   line-height: 1.5em; }
 
+pre.testing {
+  width: 100%;
+  left: 0;
+  padding-left: 8.47458%;
+  padding-right: 8.47458%;
+  position: absolute;
+  z-index: 2; }
+
 /*
  * Development helpers
  */
@@ -239,10 +247,10 @@ body.single article header.entry-header h1 {
   padding-left: 1em;
   padding-right: 1em; }
 
-.wpbdp-page .listings .wpbdp-pagination, .wpbdp-page .listings header {
+.wpbdp-pagination, header.listing-excerpt {
   font-family: PMN_Roman, sans-serif;
   background-color: #1B3B50; }
-  .wpbdp-page .listings .wpbdp-pagination *, .wpbdp-page .listings header * {
+  .wpbdp-pagination *, header.listing-excerpt * {
     color: #ffffff; }
 
 p {
@@ -1368,103 +1376,58 @@ h1.category-title {
       #sidebar-vcspd .button:hover :link {
         color: #ffffff; }
 
-#wpbdp-view-listings-page {
-  margin-left: 5.01992%;
-  margin-right: 5.01992%; }
-  #wpbdp-view-listings-page .wpbdp-listing-excerpt {
-    background-color: #f1f1f1; }
-  #wpbdp-view-listings-page .wpbdp-listing-excerpt.odd {
-    background-color: #D3D3D3; }
-  #wpbdp-view-listings-page .wpbdp-listing {
-    width: 100%;
+#wpbdp-view-listings-page .wpbdp-listing-excerpt {
+  background-color: #f1f1f1; }
+#wpbdp-view-listings-page .wpbdp-listing-excerpt.odd {
+  background-color: #D3D3D3; }
+#wpbdp-view-listings-page .wpbdp-listing {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative; }
+#wpbdp-view-listings-page .wpbdp-page-content .field-value {
+  border-right: 1px solid #bababa; }
+  #wpbdp-view-listings-page .wpbdp-page-content .field-value:last-child {
+    border-right: none; }
+#wpbdp-view-listings-page .listing-details {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+#wpbdp-view-listings-page .wpbdp-pagination {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 3em; }
+  #wpbdp-view-listings-page .wpbdp-pagination span {
+    width: 48.78049%;
     float: left;
-    margin-left: 0;
-    margin-right: 0;
-    position: relative; }
-  #wpbdp-view-listings-page .pd-column, #wpbdp-view-listings-page .field-value {
-    float: left;
-    padding-left: 0.60976%;
-    padding-right: 0.60976%; }
-    #wpbdp-view-listings-page .pd-column:nth-child(2n + 1), #wpbdp-view-listings-page .field-value:nth-child(2n + 1) {
-      width: 25.60976%;
-      margin-left: 0;
-      margin-right: -100%;
-      clear: both; }
-    #wpbdp-view-listings-page .pd-column:nth-child(2n + 2), #wpbdp-view-listings-page .field-value:nth-child(2n + 2) {
-      width: 74.39024%;
-      margin-left: 25.60976%;
-      margin-right: -100%;
-      clear: none; }
-  #wpbdp-view-listings-page .wpbdp-page-content header {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-  #wpbdp-view-listings-page .wpbdp-page-content .field-value {
-    border-right: 1px solid #bababa; }
-    #wpbdp-view-listings-page .wpbdp-page-content .field-value:last-child {
-      border-right: none; }
-  #wpbdp-view-listings-page .listing-details {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; }
-  #wpbdp-view-listings-page .listing-actions {
-    width: 2.11155%;
-    float: left;
-    margin-right: 0.39841%;
-    position: absolute; }
-    #wpbdp-view-listings-page .listing-actions > a {
-      width: 32.25806%;
-      float: left;
-      max-height: 1.5em;
-      overflow: hidden;
-      font-size: 0.1875em;
-      line-height: 2.4em; }
-      #wpbdp-view-listings-page .listing-actions > a:nth-child(3n + 1) {
-        margin-left: 0;
-        margin-right: -100%;
-        clear: both;
-        margin-left: 0; }
-      #wpbdp-view-listings-page .listing-actions > a:nth-child(3n + 2) {
-        margin-left: 33.87097%;
-        margin-right: -100%;
-        clear: none; }
-      #wpbdp-view-listings-page .listing-actions > a:nth-child(3n + 3) {
-        margin-left: 67.74194%;
-        margin-right: -100%;
-        clear: none; }
-      #wpbdp-view-listings-page .listing-actions > a.view-listing {
-        background-color: green !important; }
-      #wpbdp-view-listings-page .listing-actions > a.edit-listing {
-        background-color: orange !important; }
-      #wpbdp-view-listings-page .listing-actions > a.delete-listing {
-        background-color: red !important; }
-  #wpbdp-view-listings-page .wpbdp-pagination {
-    clear: both;
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 3em; }
-    #wpbdp-view-listings-page .wpbdp-pagination span {
-      width: 48.78049%;
-      float: left;
-      margin-right: 2.43902%; }
-      #wpbdp-view-listings-page .wpbdp-pagination span.next {
-        float: right;
-        margin-right: 0; }
-        #wpbdp-view-listings-page .wpbdp-pagination span.next:before {
-          content: ' | '; }
-      #wpbdp-view-listings-page .wpbdp-pagination span.prev {
-        text-align: right; }
-  #wpbdp-view-listings-page pre.testing {
-    width: 100%;
-    left: 0;
-    padding-left: 8.36653%;
-    padding-right: 8.36653%;
-    position: absolute;
-    z-index: 2; }
+    margin-right: 2.43902%; }
+    #wpbdp-view-listings-page .wpbdp-pagination span.next {
+      float: right;
+      margin-right: 0; }
+      #wpbdp-view-listings-page .wpbdp-pagination span.next:before {
+        content: ' | '; }
+    #wpbdp-view-listings-page .wpbdp-pagination span.prev {
+      text-align: right; }
+
+.wpbdp-listing.wpbdp-listing-excerpt .field-value.wpbdp-field-association-title {
+  width: 32.97872%;
+  float: left;
+  margin-right: 0.53191%;
+  background-color: red !important; }
+
+.wpbdp-listing .listing-details .field-value {
+  width: auto; }
+
+header.listing-excerpt {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

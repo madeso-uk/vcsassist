@@ -42,7 +42,6 @@ $listing-border: 1px solid darken($vcsgrey, 10);
   }
 }
 #wpbdp-view-listings-page {
-  @include squish(0.6 of 12);
     // Partner Listing Page
   .wpbdp-listing-excerpt {
     background-color: $color__background-screen;
@@ -54,15 +53,12 @@ $listing-border: 1px solid darken($vcsgrey, 10);
     @include span(full nest clearfix);
     position: relative;
   }
-  .pd-column, .field-value {
-    @include gallery(1 of (1 3) inside);
-  }
+  // .pd-column, .field-value {
+  //   @include gallery(1 of (1 3) inside);
+  // }
   .wpbdp-page-content {
     .listings {
       // border: $listing-border;
-    }
-    header {
-      @include span(full nest clearfix);
     }
     .wpbdp-listing.excerpt {
       // border-top: $listing-border;
@@ -78,20 +74,20 @@ $listing-border: 1px solid darken($vcsgrey, 10);
   .listing-details {
     @include span(full nested);
   }
-  .listing-actions {
-    @include span(0.3 of 12 alpha nested);
-    position: absolute;
-    // left: span(0.3 of 12)*-1; 
-    >a {
-      @include gallery(1 of 3);
-      max-height: rhythm(1);
-      overflow: hidden;
-      @include adjust-font-size-to(3px, 0.3);
-      &.view-listing { @include testing(green) }
-      &.edit-listing { @include testing(orange);}
-      &.delete-listing { @include testing(red);}
-    }
-  }
+  // .listing-actions {
+  //   @include span(0.3 of 12 alpha nested);
+  //   position: absolute;
+  //   // left: span(0.3 of 12)*-1; 
+  //   >a {
+  //     @include gallery(1 of 3);
+  //     max-height: rhythm(1);
+  //     overflow: hidden;
+  //     @include adjust-font-size-to(3px, 0.3);
+  //     &.view-listing { @include testing(green) }
+  //     &.edit-listing { @include testing(orange);}
+  //     &.delete-listing { @include testing(red);}
+  //   }
+  // }
   .wpbdp-pagination {
     @include full(nested);
     @include margin-trailer(2);
@@ -101,11 +97,16 @@ $listing-border: 1px solid darken($vcsgrey, 10);
       &.prev {text-align: right;}
     }
   }
-  pre.testing {
-    width: span(full);
-    left: 0;
-    @include pad(1 of 12);
-    position: absolute;
-    z-index: 2;
-  }
 } // end of Listing view
+.wpbdp-listing.wpbdp-listing-excerpt .field-value.wpbdp-field-association-title {
+  @include span(3 of 9 alpha);
+  @include testing;
+}
+.wpbdp-listing .listing-details .field-value {
+  width: auto;
+}
+
+header.listing-excerpt {
+  @include span(full nest clearfix);
+}
+

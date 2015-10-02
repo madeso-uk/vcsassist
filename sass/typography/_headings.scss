@@ -84,14 +84,10 @@ body.single {
 
 
 // directory page
-.wpbdp-page {
-  .listings {
-    .wpbdp-pagination, header {
-      font-family: $font__heading, sans-serif;
-      background-color: $vcsblue;
-      * {
-        color: $color__text-alt;
-      }
-    }
+.wpbdp-pagination, header.listing-excerpt {
+  font-family: $font__heading, sans-serif;
+  background-color: $vcsblue;
+  * {
+    color: $color__text-alt;
   }
 }

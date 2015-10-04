@@ -64,7 +64,12 @@ $listing-border: 1px solid darken($vcsgrey, 10);
       // border-top: $listing-border;
     }
     .field-value {
-      border-right: $listing-border;
+      &.wpbdp-field-association-title {
+        @include span(3 of 9 alpha);
+      }
+      // border-right: $listing-border;
+      width: auto;
+      float: right;
       &:last-child{
         border-right: none;
       }
@@ -98,10 +103,7 @@ $listing-border: 1px solid darken($vcsgrey, 10);
     }
   }
 } // end of Listing view
-.wpbdp-listing.wpbdp-listing-excerpt .field-value.wpbdp-field-association-title {
-  @include span(3 of 9 alpha);
-  @include testing;
-}
+// .wpbdp-listing.wpbdp-listing-excerpt .field-value
 .wpbdp-listing .listing-details .field-value {
   width: auto;
 }

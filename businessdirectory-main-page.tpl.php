@@ -6,16 +6,14 @@
     <?php echo $__page__['before_content']; ?>
 
     <div class="wpbdp-page-content <?php echo join(' ', $__page__['content_class']); ?>">
-    		<?php // wpbdp_the_directory_categories(); ?>
+    		<?php wpbdp_the_directory_categories(); ?>
 
         <?php if ($listings) { ?>
   <header class='listing-excerpt'>
     <span>Title</span>
     <span>description</span>
   </header>
-<?php
-        echo $listings;
-        } ?>
+<?php echo $listings; } ?>
     </div>
 
 </div>

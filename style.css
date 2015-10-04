@@ -1387,7 +1387,12 @@ h1.category-title {
   margin-right: 0;
   position: relative; }
 #wpbdp-view-listings-page .wpbdp-page-content .field-value {
-  border-right: 1px solid #bababa; }
+  width: auto;
+  float: right; }
+  #wpbdp-view-listings-page .wpbdp-page-content .field-value.wpbdp-field-association-title {
+    width: 32.97872%;
+    float: left;
+    margin-right: 0.53191%; }
   #wpbdp-view-listings-page .wpbdp-page-content .field-value:last-child {
     border-right: none; }
 #wpbdp-view-listings-page .listing-details {
@@ -1413,12 +1418,6 @@ h1.category-title {
         content: ' | '; }
     #wpbdp-view-listings-page .wpbdp-pagination span.prev {
       text-align: right; }
-
-.wpbdp-listing.wpbdp-listing-excerpt .field-value.wpbdp-field-association-title {
-  width: 32.97872%;
-  float: left;
-  margin-right: 0.53191%;
-  background-color: red !important; }
 
 .wpbdp-listing .listing-details .field-value {
   width: auto; }

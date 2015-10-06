@@ -3,20 +3,20 @@ $listing-border: 1px solid darken($vcsgrey, 10);
 // General Page Layout Breaoipoints
 .sidebar.partner-directory {
   @include span(full);
-  @include susy-breakpoint($bp-mobile) {
-    @include span(4 of 12 alpha nest);
+  @include susy-breakpoint($bp-mob) {
+    @include span(4 of 12 1/8 alpha nest);
   }
   @include susy-breakpoint($bp-screen) {
-    @include span(3 of 12 alpha);
+    @include span(3 of 12 1/8 alpha);
   }
 }
 #primary.partner-directory-page {
   @include span(full nest last);
-  @include susy-breakpoint($bp-mobile) {
-    @include span(8 of 12 nest omega);
+  @include susy-breakpoint($bp-mob) {
+    @include span(8 of 12 1/8 nest omega);
   }
   @include susy-breakpoint($bp-screen) {
-    @include span(9 of 12 nest omega);
+    @include span(9 of 12 1/8 nest omega);
   }
 }
 #sidebar-vcspd {
@@ -29,9 +29,9 @@ $listing-border: 1px solid darken($vcsgrey, 10);
 
   // ul.wpbdp-categories > li.cat-item {
   .button {
-    @include span(full border-box);
-    @include susy-breakpoint($bp-screen){
-      @include span(1 of 1 inside narrow);
+    @include span(full border-box inside);
+    @include susy-breakpoint(max-width $bp-mob) {
+      @include gallery(1 of 2 border-box);
     }
     @include button($color__background-button, 4px);
 
@@ -41,40 +41,37 @@ $listing-border: 1px solid darken($vcsgrey, 10);
     text-align: center;
   }
 }
-#wpbdp-view-listings-page {
-    // Partner Listing Page
-  .wpbdp-listing-excerpt {
-    background-color: $color__background-screen;
+.wpbdp-listing-excerpt {
+  background-color: $color__background-screen;
+  padding: 0;
+
+}
+.wpbdp-listing-excerpt.odd {
+  background-color: $color__page;
+}
+.wpbdp-listing {
+  @include span(full nest wider border-box);
+  position: relative;
+}
+.wpbdp-page-content {
+  .listings {
   }
-  .wpbdp-listing-excerpt.odd {
-    background-color: $color__page;
+  .wpbdp-listing.excerpt {
   }
-  .wpbdp-listing {
-    @include span(full nest clearfix);
-    position: relative;
-  }
-  // .pd-column, .field-value {
-  //   @include gallery(1 of (1 3) inside);
-  // }
-  .wpbdp-page-content {
-    .listings {
-      // border: $listing-border;
-    }
-    .wpbdp-listing.excerpt {
-      // border-top: $listing-border;
-    }
-    .field-value {
-      &.wpbdp-field-association-title {
-        @include span(3 of 9 alpha);
-      }
-      // border-right: $listing-border;
-      width: auto;
-      float: right;
-      &:last-child{
-        border-right: none;
+  .field-value {
+    &.wpbdp-field-association-title {
+      @include full;
+      .value {
+        >a {
+          @include pad(5px);
+          display: block;
+          color: $color__text-alt;
+          background-color: $vcs__teal-blue;
+        }
       }
     }
   }
+}
 
   .listing-details {
     @include span(full nested);
@@ -102,13 +99,65 @@ $listing-border: 1px solid darken($vcsgrey, 10);
       &.prev {text-align: right;}
     }
   }
-} // end of Listing view
+// } // end of Listing view
 // .wpbdp-listing.wpbdp-listing-excerpt .field-value
 .wpbdp-listing .listing-details .field-value {
-  width: auto;
+  // width: auto;
 }
 
 header.listing-excerpt {
   @include span(full nest clearfix);
 }
-
+/*
+ * claims listing styles
+ */
+.wpbdp-claim-listings {
+//   
+.claim-listing-link {
+  color: $color__text-alt;
+}
+  position: absolute;
+  right: 10px;
+  * {
+    color: $color__text-screen;
+  }
+}
+#hidebox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+.black_overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	// background-color: black;
+  background: linear-gradient($vcsgrey-light, $vcsblue);
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+.white_content {
+  position: fixed;
+  height: 70%;
+  top: 15%;
+  left: span(1.5 of 9 inside);
+  @include span(6.5 of 9);
+  
+  @include susy-breakpoint($bp-largescreen){
+    left: 0;
+    @include span(isolate 5 of 9 at 3);
+  }
+	display: none;
+	padding: 16px;
+  border-radius: 3px;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}

@@ -64,7 +64,7 @@ h1.entry-title {
 // content page headings
 body.single {
 	div.tptn_counter, footer.entry-footer, nav.post-navigation {
-		@include testing($vcsgrey);
+		background: $vcsgrey;
 	}
 		article {
 		h1, h2, h3 {
@@ -84,6 +84,14 @@ body.single {
 
 
 // directory page
+.directory.category {
+  @include adjust-font-size-to(14px);
+  font-family: $font__heading, sans-serif, sans-serif;
+}
+
+.field-value.wpbdp-field-association-title {
+  font-family: $font__heading, sans-serif, sans-serif;
+}
 .wpbdp-pagination, header.listing-excerpt {
   font-family: $font__heading, sans-serif;
   background-color: $vcsblue;

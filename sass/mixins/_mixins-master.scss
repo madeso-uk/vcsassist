@@ -43,6 +43,7 @@
   background-color: $butcol;
   box-shadow: none;
   text-shadow: none;
+  white-space: normal;
 	&:hover {
     background-color: $vcsblue;
     color: $color__text-alt;

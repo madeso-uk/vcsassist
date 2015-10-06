@@ -14,6 +14,7 @@
  */
 
 get_header(); ?>
+<?php get_sidebar('directory'); ?>
 	<div id="primary" class="with-sidebar content-area partner-directory-page">
 		<main id="main" class="site-main" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -31,5 +32,4 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_sidebar('directory'); ?>
 <?php get_footer(); ?>

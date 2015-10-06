@@ -21,9 +21,7 @@ $page-container: (
 	}
 div#content {
 	background-color: $color__page;
-	//@include gutters(0.05rem outside);
-	padding-left: gutter(2rem inside);
-	padding-right: gutter(2rem inside);
+  @include pad(1rem);
 	word-wrap: break-word;
 }
 body.single div#content {

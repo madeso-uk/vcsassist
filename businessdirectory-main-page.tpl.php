@@ -9,10 +9,6 @@
     		<?php // wpbdp_the_directory_categories(); ?>
 
         <?php if ($listings) { ?>
-  <header class='listing-excerpt'>
-    <span>Title</span>
-    <span>description</span>
-  </header>
 <?php echo $listings; } ?>
     </div>
 

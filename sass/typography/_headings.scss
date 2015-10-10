@@ -85,8 +85,22 @@ body.single {
 
 // directory page
 .directory.category {
-  @include adjust-font-size-to(14px);
+  @include adjust-font-size-to(16px);
   font-family: $font__heading, sans-serif, sans-serif;
+}
+.listing-actions {
+  font-family: $font__heading, sans-serif, sans-serif; 
+  a {
+    color: $color__text-main;
+    &:visited {
+      color: $color__text-main;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__text-main;
+    }
+  }
 }
 
 .field-value.wpbdp-field-association-title {

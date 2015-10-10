@@ -248,9 +248,18 @@ body.single article header.entry-header h1 {
   padding-right: 1em; }
 
 .directory.category {
-  font-size: 0.875em;
-  line-height: 1.71429em;
+  font-size: 1em;
+  line-height: 1.5em;
   font-family: PMN_Roman, sans-serif, sans-serif; }
+
+.listing-actions {
+  font-family: PMN_Roman, sans-serif, sans-serif; }
+  .listing-actions a {
+    color: #1B3B50; }
+    .listing-actions a:visited {
+      color: #1B3B50; }
+    .listing-actions a:hover, .listing-actions a:focus, .listing-actions a:active {
+      color: #1B3B50; }
 
 .field-value.wpbdp-field-association-title {
   font-family: PMN_Roman, sans-serif, sans-serif; }
@@ -495,6 +504,31 @@ textarea {
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
   width: 100%; }
+
+#sidebar-vcspd .wpbdp-search-form input[type="text"] {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0.75em;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  margin-bottom: 0.75em;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 83.2%;
+  float: left;
+  margin-right: 0.8%; }
+#sidebar-vcspd .wpbdp-search-form input[type="submit"] {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0.75em;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  margin-bottom: 0.75em;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16%;
+  float: right;
+  margin-right: 0; }
 
 /*--------------------------------------------------------------
 5.0 Navigation
@@ -1441,16 +1475,17 @@ h1.category-title {
     width: 150px; }
     .excerpt .listing-actions > a {
       text-align: center;
-      background-color: #D3D3D3;
+      background-color: #e6e6e6;
       box-shadow: none;
       text-shadow: none;
       white-space: normal;
       text-decoration: none;
       background-color: clear !important;
-      border-radius: 0;
+      border-radius: 4px;
       border: 1px solid #bababa;
-      border-bottom: 0;
-      clear: both;
+      margin-left: 0.3rem;
+      margin-right: 0.3rem;
+      margin-top: 0.45em;
       width: 100%;
       float: left;
       margin-left: 0;
@@ -1460,8 +1495,6 @@ h1.category-title {
         color: #ffffff; }
         .excerpt .listing-actions > a:hover :link {
           color: #ffffff; }
-      .excerpt .listing-actions > a:last-child {
-        border-bottom: 1px solid #bababa; }
   .excerpt .wpbdp-claim-listings {
     position: absolute;
     right: 10px;

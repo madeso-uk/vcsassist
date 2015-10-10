@@ -88,11 +88,13 @@
     width: 150px;
     >a {
       text-align: center;
-      @include button($vcsgrey, 0);
+      @include button($color__background-button, 4px);
       border: $vcs-button;
-      border-bottom: 0;
-      &:last-child {border-bottom: $vcs-button;}
-      @include full;
+      @include squish(0.3rem);
+      @include margin-leader(0.3);
+      // border-bottom: 0;
+      // &:last-child {border-bottom: $vcs-button;}
+      @include span(1 of 1);
     }
   }
   .wpbdp-claim-listings {

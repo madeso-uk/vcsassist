@@ -2,6 +2,7 @@
 @import "colors";
 @import "typography";
 @import "structure";
+@import "developer";
 
 //[Susy default settings]
 $susy: (
@@ -35,6 +36,7 @@ $susy: (
 // [breakpoint vars]
 $breakpoint-to-rems: true;
 $bp-mobile: max-width 640px;
+$bp-mob: 640px;
 $bp-screen: 680px;
 $bp-largescreen: 880px;
 //$bp-mobile-s: max-width 60rem;

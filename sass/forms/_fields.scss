@@ -53,3 +53,20 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 100%;
 }
+
+
+// Partner Directory
+#sidebar-vcspd .wpbdp-search-form {
+  input[type="text"] {
+    @include adjust-font-size-to(16px);
+    @include rhythm(0.5, 0.3);
+    @include span(5 of 6 first border-box);
+  }
+  input[type="submit"] {
+    @include adjust-font-size-to(16px);
+    @include rhythm(0.5, 0.3);
+    @include span(1 of 6 last border-box);
+    @include pad(3px);
+    text-align: center;
+  }
+}

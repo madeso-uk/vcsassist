@@ -46,5 +46,8 @@ $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
 
-$color__widget-border: adjust-lightness($vcsgrey, -10);
+$color__widget-border: darken($vcsgrey, 10);
 $color__selected: $vcsgrey-light;
+
+//button style stack
+$vcs-button: 1px solid $color__widget-border;

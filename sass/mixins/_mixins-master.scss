@@ -39,6 +39,30 @@
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
+@mixin button($butcol: $color__background-button, $corner: 2em) {
+  background-color: $butcol;
+  box-shadow: none;
+  text-shadow: none;
+  white-space: normal;
+	&:hover {
+    background-color: $vcsblue;
+    color: $color__text-alt;
+    & :link {
+      color: $color__text-alt;
+    }
+  }
+	@include nolink;
+	border-radius: $corner;
+
+}
+@mixin button-style {
+    border: 1px solid darken($color__background-button, 10);
+    @include rhythm(0.2, 0.2);
+    text-align: center;
+    @include adjust-font-size-to(16px);
+    font-family: $font__heading, sans-serif, sans-serif;
+    @extend .vcs-button
+}
 /*
  * Development helpers
  */

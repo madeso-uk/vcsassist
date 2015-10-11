@@ -36,18 +36,13 @@
  * listing pages
  */
 .wpbdp-listing-single {
-  // background: $color__background-widget;
-  .listing-thumbnail {
-  
-  }
-  .listing-title {
-    
-  }
-}
-.wpbdp-listing-single {
   .field-value {
     @include full;
     @include pad(1rem);
+    >label {
+      @extend h4;
+      font-weight: bold;
+    }
   }
   .listing-actions {
     @include span(3 of 4 last);
@@ -123,6 +118,11 @@
     position: relative;
   }
   .field-value {
+    >label {
+      @extend h5;
+      font-weight: bold;
+      
+    }
     &.wpbdp-field-association-title {
       // @include full;
       position: absolute;
@@ -194,4 +194,34 @@ header.listing-excerpt {
 }
 .stickytag {
   @include span(100px);
+}
+/*
+ * edit listing page
+ */
+#wpbdp-submit-page {
+  .wpbdp-form-field {
+    @include full(nested);
+    @include margin-trailer(1);
+  }
+  .wpbdmcheckboxclass {
+    @include gallery(1 of 4);
+  }
+  textarea {
+    height: 250px;
+  }
+  label { 
+    padding-right: 1rem;
+    font-weight: bold;
+  }
+  .wpbdp-form-field-type-textfield {
+    .wpbdp-form-field-label {
+      // @include full;
+      @include span(6 of 9 first);
+    }
+    .wpbdp-form-field-html {
+      // @include full;
+      @include span(3 of 9 last);
+      input { @include span(full);}
+    }
+  }
 }

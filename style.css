@@ -66,7 +66,7 @@ pre.testing {
 1.0 Reset
 --------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, .wpbdp-listing-single .field-value > label, h5, .excerpt .field-value > label, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -166,7 +166,7 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, .wpbdp-listing-single .field-value > label, h5, .excerpt .field-value > label, h6 {
   clear: both;
   font-family: PMN_Roman, sans-serif; }
 
@@ -182,7 +182,7 @@ h3 {
   font-size: 1.8em;
   line-height: 1.66667em; }
 
-h4 {
+h4, .wpbdp-listing-single .field-value > label {
   font-size: 1.3em;
   line-height: 2.30769em; }
 
@@ -1350,7 +1350,7 @@ h1.category-title {
   .widget ul li p.post-date {
     font-size: 0.5625em;
     line-height: 2.66667em; }
-  .widget ul li h4.post-title {
+  .widget ul li h4.post-title, .widget ul li .wpbdp-listing-single .field-value > label.post-title, .wpbdp-listing-single .widget ul li .field-value > label.post-title {
     font-size: 0.875em;
     line-height: 1.71429em;
     font-weight: bold; }
@@ -1477,6 +1477,8 @@ h1.category-title {
   margin-right: 0;
   padding-left: 1rem;
   padding-right: 1rem; }
+  .wpbdp-listing-single .field-value > label {
+    font-weight: bold; }
 .wpbdp-listing-single .listing-actions {
   width: 74.6988%;
   float: right;
@@ -1567,6 +1569,8 @@ h1.category-title {
     margin-left: 0;
     margin-right: 0;
     position: relative; }
+  .excerpt .field-value > label {
+    font-weight: bold; }
   .excerpt .field-value.wpbdp-field-association-title {
     position: absolute;
     top: 0;
@@ -1653,6 +1657,55 @@ header.listing-excerpt {
   width: 100px;
   float: left;
   margin-right: 0.29851%; }
+
+/*
+ * edit listing page
+ */
+#wpbdp-submit-page .wpbdp-form-field {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5em; }
+#wpbdp-submit-page .wpbdmcheckboxclass {
+  width: 24.09639%;
+  float: left; }
+  #wpbdp-submit-page .wpbdmcheckboxclass:nth-child(4n + 1) {
+    margin-left: 0;
+    margin-right: -100%;
+    clear: both;
+    margin-left: 0; }
+  #wpbdp-submit-page .wpbdmcheckboxclass:nth-child(4n + 2) {
+    margin-left: 25.3012%;
+    margin-right: -100%;
+    clear: none; }
+  #wpbdp-submit-page .wpbdmcheckboxclass:nth-child(4n + 3) {
+    margin-left: 50.60241%;
+    margin-right: -100%;
+    clear: none; }
+  #wpbdp-submit-page .wpbdmcheckboxclass:nth-child(4n + 4) {
+    margin-left: 75.90361%;
+    margin-right: -100%;
+    clear: none; }
+#wpbdp-submit-page textarea {
+  height: 250px; }
+#wpbdp-submit-page label {
+  padding-right: 1rem;
+  font-weight: bold; }
+#wpbdp-submit-page .wpbdp-form-field-type-textfield .wpbdp-form-field-label {
+  width: 66.48936%;
+  float: left;
+  margin-right: 0.53191%; }
+#wpbdp-submit-page .wpbdp-form-field-type-textfield .wpbdp-form-field-html {
+  width: 32.97872%;
+  float: right;
+  margin-right: 0; }
+  #wpbdp-submit-page .wpbdp-form-field-type-textfield .wpbdp-form-field-html input {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

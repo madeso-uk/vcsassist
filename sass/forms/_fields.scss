@@ -66,5 +66,7 @@ textarea {
     @include adjust-font-size-to(16px);
     @include rhythm(0.5, 0.3);
     @include span(1 of 6 last border-box);
+    @include pad(3px);
+    text-align: center;
   }
 }

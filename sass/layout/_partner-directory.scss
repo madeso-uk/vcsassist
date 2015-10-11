@@ -1,18 +1,12 @@
 // General Page Layout Breaoipoints
 .sidebar.partner-directory {
   @include span(full);
-  // @include susy-breakpoint($bp-mob) {
-  //   @include span(2.5 of 12 1/8 alpha nest);
-  // }
   @include susy-breakpoint($bp-screen) {
     @include span(3 of 12 1/8 alpha);
   }
 }
 #primary.partner-directory-page {
   @include span(full nest last);
-  // @include susy-breakpoint($bp-mob) {
-  //   @include span(8 of 12 1/8 nest omega);
-  // }
   @include susy-breakpoint($bp-screen) {
     @include span(9 of 12 1/8 nest omega);
   }
@@ -21,24 +15,91 @@
   margin-top: 1.5em; //keeping the sidebare aligned with content
   .wpbdp-categories {
     list-style-type: none;
-    // margin: 0;
-    // padding: 0;
   }
 
-  // ul.wpbdp-categories > li.cat-item {
+  .vcs-submit-link {
+    @include button($color__background-button, 4px);
+    @include full;
+    @include button-style;
+
+  }
   .button {
     @include span(full border-box inside);
     @include susy-breakpoint(max-width $bp-screen) {
       @include gallery(1 of 2 border-box);
     }
     @include button($color__background-button, 4px);
-
-    // other
-    border: 1px solid darken($color__background-button, 10);
-    @include rhythm(0.2, 0.2);
-    text-align: center;
+    @include button-style;
   }
 }
+/*
+ * listing pages
+ */
+.wpbdp-listing-single {
+  // background: $color__background-widget;
+  .listing-thumbnail {
+  
+  }
+  .listing-title {
+    
+  }
+}
+.wpbdp-listing-single {
+  .field-value {
+    @include full;
+    @include pad(1rem);
+  }
+  .listing-actions {
+    @include span(3 of 4 last);
+    top: rhythm(1.25);
+    input {
+      text-align: center;
+      @include button($color__background-button, 4px);
+      border: $vcs-button;
+      @include squish(0.3rem);
+      @include margin-leader(0.3);
+      // border-bottom: 0;
+      // &:last-child {border-bottom: $vcs-button;}
+      @include span(full border-box);
+    }
+    // listing page breakpoints
+    @include susy-breakpoint($bp-screen) {
+        @include span(3 of 12 last);
+      }
+    }
+    .stickytag {
+      @include span(3 of 12 last);
+      text-align: center;
+    }
+    .listing-thumbnail {
+    @include span(3 of 12 first);
+      @include susy-breakpoint($bp-screen) {
+        @include span(3 of 12 first);
+        text-align: left;
+      }
+    }
+    &.sticky {
+      .listing-thumbnail {
+        // @include full;
+        @include padding-leader(1);
+        text-align: center;
+      }
+    }
+  }
+// mobile menu stuff
+.wpbdp-hide-on-mobile {
+  display: none;
+}
+@include susy-breakpoint($bp-screen) {
+  .wpbdp-hide-on-mobile {
+    display: inline;
+  }
+  .wpbdp-show-on-mobile {
+    display: none;
+  }
+
+}
+
 //excerpt listing markup
 .excerpt {
   background-color: $color__background-screen;
@@ -73,7 +134,7 @@
           @include pad(5px);
           display: block;
           color: $color__text-alt;
-          background-color: $vcs__teal-blue;
+          background-color: $vcsblue;
         }
       }
     }
@@ -101,9 +162,10 @@
     // open window
     position: absolute;
     right: 10px;
-    bottom: 0;
-    .claim-listing-link { color: $color__text-screen; }
-    * { color: $color__text-screen; }
+    top: 0;
+    z-index: 1;
+    .claim-listing-link, span { color: $color__text-alt; }
+    // * { color: $color__text-screen; }
   }
 	.open {
 		z-index: 99;
@@ -113,9 +175,9 @@
 		padding: 10px;
 		border-radius: 4px;
     box-shadow: 0 0 3rem rgba($vcsblue, 0.9);
+    .claim-listing-link, span { color: $color__text-screen; }
   }
 } // end of listing excerpt markup
-
 
 .wpbdp-pagination {
   @include full(nested);
@@ -130,6 +192,6 @@
 header.listing-excerpt {
   @include span(full nest clearfix);
 }
-/*
- * claims listing styles
- */
+.stickytag {
+  @include span(100px);
+}

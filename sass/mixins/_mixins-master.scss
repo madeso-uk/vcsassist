@@ -55,6 +55,14 @@
 	border-radius: $corner;
 
 }
+@mixin button-style {
+    border: 1px solid darken($color__background-button, 10);
+    @include rhythm(0.2, 0.2);
+    text-align: center;
+    @include adjust-font-size-to(16px);
+    font-family: $font__heading, sans-serif, sans-serif;
+    @extend .vcs-button
+}
 /*
  * Development helpers
  */

@@ -247,10 +247,15 @@ body.single article header.entry-header h1 {
   padding-left: 1em;
   padding-right: 1em; }
 
-.directory.category {
+.vcs-button, .vcs-submit-link, .listing-actions .button, .directory.category, #sidebar-vcspd .vcs-submit-link, #sidebar-vcspd .button {
   font-size: 1em;
   line-height: 1.5em;
-  font-family: PMN_Roman, sans-serif, sans-serif; }
+  font-family: PMN_Roman, sans-serif, sans-serif;
+  color: #1B3B50; }
+  .vcs-button:visited, .vcs-submit-link:visited, .listing-actions .button:visited, .directory.category:visited, #sidebar-vcspd .vcs-submit-link:visited, #sidebar-vcspd .button:visited {
+    color: #1B3B50; }
+  .vcs-button:hover, .vcs-submit-link:hover, .listing-actions .button:hover, .directory.category:hover, #sidebar-vcspd .vcs-submit-link:hover, #sidebar-vcspd .button:hover, .vcs-button:focus, .vcs-submit-link:focus, .listing-actions .button:focus, .directory.category:focus, #sidebar-vcspd .vcs-submit-link:focus, #sidebar-vcspd .button:focus, .vcs-button:active, .vcs-submit-link:active, .listing-actions .button:active, .directory.category:active, #sidebar-vcspd .vcs-submit-link:active, #sidebar-vcspd .button:active {
+    color: #ffffff; }
 
 .listing-actions {
   font-family: PMN_Roman, sans-serif, sans-serif; }
@@ -528,7 +533,10 @@ textarea {
   box-sizing: border-box;
   width: 16%;
   float: right;
-  margin-right: 0; }
+  margin-right: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  text-align: center; }
 
 /*--------------------------------------------------------------
 5.0 Navigation
@@ -1387,6 +1395,33 @@ h1.category-title {
   margin-top: 1.5em; }
   #sidebar-vcspd .wpbdp-categories {
     list-style-type: none; }
+  #sidebar-vcspd .vcs-submit-link {
+    background-color: #e6e6e6;
+    box-shadow: none;
+    text-shadow: none;
+    white-space: normal;
+    text-decoration: none;
+    background-color: clear !important;
+    border-radius: 4px;
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid #cdcdcd;
+    margin-top: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.3em;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: PMN_Roman, sans-serif, sans-serif; }
+    #sidebar-vcspd .vcs-submit-link:hover {
+      background-color: #1B3B50;
+      color: #ffffff; }
+      #sidebar-vcspd .vcs-submit-link:hover :link {
+        color: #ffffff; }
   #sidebar-vcspd .button {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1406,7 +1441,10 @@ h1.category-title {
     padding-top: 0.3em;
     padding-bottom: 0.3em;
     margin-bottom: 0.3em;
-    text-align: center; }
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-family: PMN_Roman, sans-serif, sans-serif; }
     @media (max-width: 680px) {
       #sidebar-vcspd .button {
         -moz-box-sizing: border-box;
@@ -1428,6 +1466,79 @@ h1.category-title {
       #sidebar-vcspd .button:hover :link {
         color: #ffffff; }
 
+/*
+ * listing pages
+ */
+.wpbdp-listing-single .field-value {
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+.wpbdp-listing-single .listing-actions {
+  width: 74.6988%;
+  float: right;
+  margin-right: 0;
+  top: 1.875em; }
+  .wpbdp-listing-single .listing-actions input {
+    text-align: center;
+    background-color: #e6e6e6;
+    box-shadow: none;
+    text-shadow: none;
+    white-space: normal;
+    text-decoration: none;
+    background-color: clear !important;
+    border-radius: 4px;
+    border: 1px solid #bababa;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 0.45em;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    .wpbdp-listing-single .listing-actions input:hover {
+      background-color: #1B3B50;
+      color: #ffffff; }
+      .wpbdp-listing-single .listing-actions input:hover :link {
+        color: #ffffff; }
+  @media (min-width: 680px) {
+    .wpbdp-listing-single .listing-actions {
+      width: 24.7012%;
+      float: right;
+      margin-right: 0; } }
+.wpbdp-listing-single .stickytag {
+  width: 24.7012%;
+  float: right;
+  margin-right: 0;
+  text-align: center; }
+.wpbdp-listing-single .listing-thumbnail {
+  width: 24.7012%;
+  float: left;
+  margin-right: 0.39841%; }
+  @media (min-width: 680px) {
+    .wpbdp-listing-single .listing-thumbnail {
+      width: 24.7012%;
+      float: left;
+      margin-right: 0.39841%;
+      text-align: left; } }
+.wpbdp-listing-single.sticky .listing-thumbnail {
+  padding-top: 1.5em;
+  text-align: center; }
+
+.wpbdp-hide-on-mobile {
+  display: none; }
+
+@media (min-width: 680px) {
+  .wpbdp-hide-on-mobile {
+    display: inline; }
+
+  .wpbdp-show-on-mobile {
+    display: none; } }
 .excerpt {
   background-color: #f1f1f1;
   width: 100%;
@@ -1466,7 +1577,7 @@ h1.category-title {
       padding-right: 5px;
       display: block;
       color: #ffffff;
-      background-color: #006983; }
+      background-color: #1B3B50; }
   .excerpt .listing-actions {
     position: absolute;
     top: 1.875em;
@@ -1498,11 +1609,10 @@ h1.category-title {
   .excerpt .wpbdp-claim-listings {
     position: absolute;
     right: 10px;
-    bottom: 0; }
-    .excerpt .wpbdp-claim-listings .claim-listing-link {
-      color: #1B3B50; }
-    .excerpt .wpbdp-claim-listings * {
-      color: #1B3B50; }
+    top: 0;
+    z-index: 1; }
+    .excerpt .wpbdp-claim-listings .claim-listing-link, .excerpt .wpbdp-claim-listings span {
+      color: #ffffff; }
   .excerpt .open {
     z-index: 99;
     bottom: auto;
@@ -1511,6 +1621,8 @@ h1.category-title {
     padding: 10px;
     border-radius: 4px;
     box-shadow: 0 0 3rem rgba(27, 59, 80, 0.9); }
+    .excerpt .open .claim-listing-link, .excerpt .open span {
+      color: #1B3B50; }
 
 .wpbdp-pagination {
   clear: both;
@@ -1537,9 +1649,11 @@ header.listing-excerpt {
   margin-left: 0;
   margin-right: 0; }
 
-/*
- * claims listing styles
- */
+.stickytag {
+  width: 100px;
+  float: left;
+  margin-right: 0.29851%; }
+
 /*--------------------------------------------------------------
 11.0 Infinite scroll
 --------------------------------------------------------------*/

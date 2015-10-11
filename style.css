@@ -1548,7 +1548,8 @@ h1.category-title {
   margin-left: 0;
   margin-right: 0;
   padding-top: 1.8em;
-  position: relative; }
+  position: relative;
+  min-height: 135px; }
   .excerpt.odd {
     background-color: #D3D3D3; }
   .excerpt .listing-thumbnail {
@@ -1558,7 +1559,7 @@ h1.category-title {
     padding-left: 0%;
     padding-right: 0.8rem; }
   .excerpt .listing-details {
-    margin-left: 150px;
+    margin-left: 1rem;
     margin-right: 150px; }
   .excerpt .wpbdp-listing {
     padding-top: 1.5em;

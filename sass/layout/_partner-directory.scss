@@ -102,6 +102,7 @@
   @include span(full);
   @include padding-leader(1.2);
   position: relative;
+  min-height: 135px; // to keep the VED buttons from dissapearing
   &.odd {
     background-color: $color__page;
   }
@@ -110,7 +111,7 @@
     @include pad(0 0.8rem);
   }
   .listing-details {
-    @include squish(150px);
+    @include squish(1rem, 150px);
   }
   .wpbdp-listing {
     @include padding-leader(1);

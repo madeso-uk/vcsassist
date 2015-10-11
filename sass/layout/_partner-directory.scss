@@ -196,16 +196,23 @@ header.listing-excerpt {
 .stickytag {
   @include span(100px);
 }
+
 /*
  * edit listing page
  */
-#wpbdp-submit-page {
+#wpbdp-submit-page:not(.step-category-selection) {
   .wpbdp-form-field {
     @include full(nested);
     @include margin-trailer(1);
   }
   .wpbdmcheckboxclass {
-    @include gallery(1 of 4);
+    @include gallery(1 of 2);
+    @include susy-breakpoint($bp-screen $bp-largescreen) {
+      @include gallery(1 of 3);
+    }
+    @include susy-breakpoint($bp-largescreen) {
+      @include gallery(1 of 4);
+    }
   }
   textarea {
     height: 250px;

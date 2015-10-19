@@ -66,7 +66,7 @@ pre.testing {
 1.0 Reset
 --------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, .wpbdp-listing-single .field-value > label, h5, .excerpt .field-value > label, h6, p, blockquote, pre,
+h1, h2, h3, h4, .wpbdp-listing-single .field-value > label, .wpbdp-listing-form .wpbdp-form-field-label, h5, .excerpt .field-value > label, .wpbdp-listing-form .category, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -166,7 +166,7 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
-h1, h2, h3, h4, .wpbdp-listing-single .field-value > label, h5, .excerpt .field-value > label, h6 {
+h1, h2, h3, h4, .wpbdp-listing-single .field-value > label, .wpbdp-listing-form .wpbdp-form-field-label, h5, .excerpt .field-value > label, .wpbdp-listing-form .category, h6 {
   clear: both;
   font-family: PMN_Roman, sans-serif; }
 
@@ -182,9 +182,12 @@ h3 {
   font-size: 1.8em;
   line-height: 1.66667em; }
 
-h4, .wpbdp-listing-single .field-value > label {
+h4, .wpbdp-listing-single .field-value > label, .wpbdp-listing-form .wpbdp-form-field-label {
   font-size: 1.3em;
   line-height: 2.30769em; }
+
+h5, .excerpt .field-value > label, .wpbdp-listing-form .category {
+  font-weight: bold; }
 
 h2.site-description {
   font-size: 0.9em;
@@ -1350,7 +1353,7 @@ h1.category-title {
   .widget ul li p.post-date {
     font-size: 0.5625em;
     line-height: 2.66667em; }
-  .widget ul li h4.post-title, .widget ul li .wpbdp-listing-single .field-value > label.post-title, .wpbdp-listing-single .widget ul li .field-value > label.post-title {
+  .widget ul li h4.post-title, .widget ul li .wpbdp-listing-single .field-value > label.post-title, .wpbdp-listing-single .widget ul li .field-value > label.post-title, .widget ul li .wpbdp-listing-form .post-title.wpbdp-form-field-label, .wpbdp-listing-form .widget ul li .post-title.wpbdp-form-field-label {
     font-size: 0.875em;
     line-height: 1.71429em;
     font-weight: bold; }
@@ -1719,6 +1722,12 @@ header.listing-excerpt {
         margin-left: 75.90361%;
         margin-right: -100%;
         clear: none; } }
+#wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-inner .wordcounter {
+  display: none; }
+#wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-inner .over {
+  background-color: red !important;
+  padding: 4px;
+  color: #ffffff; }
 #wpbdp-submit-page:not(.step-category-selection) textarea {
   height: 250px; }
 #wpbdp-submit-page:not(.step-category-selection) label {
@@ -1737,6 +1746,74 @@ header.listing-excerpt {
     float: left;
     margin-left: 0;
     margin-right: 0; }
+
+.wpbdp-listing-form .category {
+  color: #285776; }
+.wpbdp-listing-form .wpbdp-form-field-html > li {
+  border-radius: 4px;
+  border: 1px solid #cdcdcd;
+  margin-top: 0.3em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.3em;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: PMN_Roman, sans-serif, sans-serif; }
+  .wpbdp-listing-form .wpbdp-form-field-html > li li {
+    width: 48.78049%;
+    float: left;
+    clear: both; }
+    .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(2n + 1) {
+      margin-left: 0;
+      margin-right: -100%;
+      clear: both;
+      margin-left: 0; }
+    .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(2n + 2) {
+      margin-left: 51.21951%;
+      margin-right: -100%;
+      clear: none; }
+    @media (min-width: 680px) and (max-width: 880px) {
+      .wpbdp-listing-form .wpbdp-form-field-html > li li {
+        width: 32.25806%;
+        float: left; }
+        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 2) {
+          margin-left: 33.87097%;
+          margin-right: -100%;
+          clear: none; }
+        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 3) {
+          margin-left: 67.74194%;
+          margin-right: -100%;
+          clear: none; } }
+    @media (min-width: 880px) {
+      .wpbdp-listing-form .wpbdp-form-field-html > li li {
+        width: 24.09639%;
+        float: left; }
+        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 2) {
+          margin-left: 25.3012%;
+          margin-right: -100%;
+          clear: none; }
+        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 3) {
+          margin-left: 50.60241%;
+          margin-right: -100%;
+          clear: none; }
+        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 4) {
+          margin-left: 75.90361%;
+          margin-right: -100%;
+          clear: none; } }
+.wpbdp-listing-form li, .wpbdp-listing-form ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

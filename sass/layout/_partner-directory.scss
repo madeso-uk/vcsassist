@@ -214,6 +214,16 @@ header.listing-excerpt {
       @include gallery(1 of 4);
     }
   }
+  .wpbdp-form-field-inner {
+    .wordcounter {
+      display: none;
+    }
+    .over {
+      background-color: red !important;
+      padding: 4px;
+      color: $color__text-alt;
+    }
+  }
   textarea {
     height: 250px;
   }
@@ -232,4 +242,37 @@ header.listing-excerpt {
       input { @include span(full);}
     }
   }
+}
+.wpbdp-listing-form {
+  .wpbdp-form-field-label {
+    @extend h4;
+  }
+	.category {
+    @extend h5;
+    color: lighten($color__text-main, 10);
+  }
+  .wpbdp-form-field-html>li{
+    border-radius: 4px;
+    border: 1px solid darken($color__background-button, 10);
+    @include rhythm(0.2, 0.2);
+    @include adjust-font-size-to(16px);
+    font-family: $font__heading, sans-serif, sans-serif;
+    // @include margin-trailer(1);
+    li {
+      @include gallery(1 of 2);
+      @include susy-breakpoint($bp-screen $bp-largescreen) {
+        @include gallery(1 of 3);
+      }
+      @include susy-breakpoint($bp-largescreen) {
+        @include gallery(1 of 4);
+      }
+      clear: both;
+    }
+  }
+
+	li, ul {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+	}
 }

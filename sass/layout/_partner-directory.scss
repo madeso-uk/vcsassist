@@ -66,14 +66,31 @@
  * listing pages
  */
 .wpbdp-listing-single {
-  .field-value {
+  .wpbdp-field-association-title {
+    @extend h3;
+    border: 0;
+    background: none;
+  }
+  .wpbdp-field-what_are_you_looking_for, .wpbdp-field-content {
+    @include widgetify;
     @include full;
-    @include pad(1rem);
+    @include pad(0);
+    @include margin-trailer(1);
+    >span {
+      @include pad(0.5rem);
+      display: block;
+    }
     >label {
-      @extend h4;
-      font-weight: bold;
+      display: block;
+      background: $vcsblue;
+      color: $color__text-alt;
+      @include pad(0.5rem);
+      // @include rhythm-padding(0.3);
+      @extend h5;
+      // font-weight: bold;
     }
   }
+
   .listing-actions {
     @include span(3 of 4 last);
     top: rhythm(1.25);
@@ -152,7 +169,6 @@
     >label {
       @extend h5;
       font-weight: bold;
-      
     }
     &.wpbdp-field-association-title {
       // @include full;
@@ -234,6 +250,8 @@ header.listing-excerpt {
   .wpbdp-form-field {
     @include full(nested);
     @include margin-trailer(1);
+    @include padding-trailer(1);
+    border-bottom: $vcs-button;
   }
   .wpbdmcheckboxclass {
     @include gallery(1 of 2);
@@ -264,18 +282,42 @@ header.listing-excerpt {
   .wpbdp-form-field-type-textfield {
     .wpbdp-form-field-label {
       // @include full;
-      @include span(6 of 9 first);
+      @include span(6 of 9 first nested);
+      >label, >span { display: block;}
+
     }
     .wpbdp-form-field-html {
       // @include full;
       @include span(3 of 9 last);
-      input { @include span(full);}
+      input { @include span(full border-box);}
     }
   }
 }
 .wpbdp-listing-form {
+  vertical-align: bottom;
+  .wpbdp-form-field-type-url {
+
+    .wpbdp-form-field-html>* {
+      @include gallery(1 of (1 3) border-box);
+    }
+    // .sublabel { 
+    //   @include span(1 of 4 first);
+    // }
+    // .intextbox {
+    //   @include span(3 of 4 last);
+    // }
+  }
   .wpbdp-form-field-label {
-    @extend h4;
+    @include padding-trailer(1);
+    >label { 
+      @extend h4;
+      display: block;
+    }
+    >span { 
+      @extend h6;
+      font-weight: normal;
+      display: block;
+    }
   }
 	.category {
     // @extend h5;

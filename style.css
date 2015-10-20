@@ -66,7 +66,7 @@ pre.testing {
 1.0 Reset
 --------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, .wpbdp-listing-single .field-value > label, .wpbdp-listing-form .wpbdp-form-field-label, h5, #sidebar-vcspd .widget_vcs_taxonomy .widget-title, .excerpt .field-value > label, h6, p, blockquote, pre,
+h1, h2, h3, .wpbdp-listing-single .wpbdp-field-association-title, h4, .wpbdp-listing-form .wpbdp-form-field-label > label, h5, #sidebar-vcspd .widget_vcs_taxonomy .widget-title, .wpbdp-listing-single .wpbdp-field-what_are_you_looking_for > label, .wpbdp-listing-single .wpbdp-field-content > label, .excerpt .field-value > label, h6, .wpbdp-listing-form .wpbdp-form-field-label > span, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -166,7 +166,7 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
-h1, h2, h3, h4, .wpbdp-listing-single .field-value > label, .wpbdp-listing-form .wpbdp-form-field-label, h5, #sidebar-vcspd .widget_vcs_taxonomy .widget-title, .excerpt .field-value > label, h6 {
+h1, h2, h3, .wpbdp-listing-single .wpbdp-field-association-title, h4, .wpbdp-listing-form .wpbdp-form-field-label > label, h5, #sidebar-vcspd .widget_vcs_taxonomy .widget-title, .wpbdp-listing-single .wpbdp-field-what_are_you_looking_for > label, .wpbdp-listing-single .wpbdp-field-content > label, .excerpt .field-value > label, h6, .wpbdp-listing-form .wpbdp-form-field-label > span {
   clear: both;
   font-family: PMN_Roman, sans-serif; }
 
@@ -178,15 +178,15 @@ h2 {
   font-size: 2em;
   line-height: 1.5em; }
 
-h3 {
+h3, .wpbdp-listing-single .wpbdp-field-association-title {
   font-size: 1.8em;
   line-height: 1.66667em; }
 
-h4, .wpbdp-listing-single .field-value > label, .wpbdp-listing-form .wpbdp-form-field-label {
+h4, .wpbdp-listing-form .wpbdp-form-field-label > label {
   font-size: 1.3em;
   line-height: 2.30769em; }
 
-h5, #sidebar-vcspd .widget_vcs_taxonomy .widget-title, .excerpt .field-value > label {
+h5, #sidebar-vcspd .widget_vcs_taxonomy .widget-title, .wpbdp-listing-single .wpbdp-field-what_are_you_looking_for > label, .wpbdp-listing-single .wpbdp-field-content > label, .excerpt .field-value > label {
   font-weight: bold; }
 
 h2.site-description {
@@ -231,7 +231,7 @@ h1.entry-title {
 
 body.single div.tptn_counter, body.single footer.entry-footer, body.single nav.post-navigation {
   background: #D3D3D3; }
-body.single article h1, body.single article h2, body.single article h3 {
+body.single article h1, body.single article h2, body.single article h3, body.single article .wpbdp-listing-single .wpbdp-field-association-title, .wpbdp-listing-single body.single article .wpbdp-field-association-title {
   margin-top: 0em;
   padding-top: 0.75em;
   padding-bottom: 0.9em;
@@ -511,7 +511,8 @@ textarea {
   padding-left: 3px;
   vertical-align: top;
   /* Improves readability and alignment in all browsers */
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box; }
 
 #sidebar-vcspd .wpbdp-search-form input[type="text"] {
   font-size: 1em;
@@ -1367,7 +1368,7 @@ h1.category-title {
   .widget ul li p.post-date {
     font-size: 0.5625em;
     line-height: 2.66667em; }
-  .widget ul li h4.post-title, .widget ul li .wpbdp-listing-single .field-value > label.post-title, .wpbdp-listing-single .widget ul li .field-value > label.post-title, .widget ul li .wpbdp-listing-form .post-title.wpbdp-form-field-label, .wpbdp-listing-form .widget ul li .post-title.wpbdp-form-field-label {
+  .widget ul li h4.post-title, .widget ul li .wpbdp-listing-form .wpbdp-form-field-label > label.post-title, .wpbdp-listing-form .widget ul li .wpbdp-form-field-label > label.post-title {
     font-size: 0.875em;
     line-height: 1.71429em;
     font-weight: bold; }
@@ -1532,16 +1533,36 @@ h1.category-title {
 /*
  * listing pages
  */
-.wpbdp-listing-single .field-value {
+.wpbdp-listing-single .wpbdp-field-association-title {
+  border: 0;
+  background: none; }
+.wpbdp-listing-single .wpbdp-field-what_are_you_looking_for, .wpbdp-listing-single .wpbdp-field-content {
+  border-radius: 4px;
+  border: 1px solid #bababa;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  list-style: outside none none;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   clear: both;
   width: 100%;
   float: left;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-  .wpbdp-listing-single .field-value > label {
-    font-weight: bold; }
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-bottom: 1.5em; }
+  .wpbdp-listing-single .wpbdp-field-what_are_you_looking_for > span, .wpbdp-listing-single .wpbdp-field-content > span {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: block; }
+  .wpbdp-listing-single .wpbdp-field-what_are_you_looking_for > label, .wpbdp-listing-single .wpbdp-field-content > label {
+    display: block;
+    background: #1B3B50;
+    color: #ffffff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
 .wpbdp-listing-single .listing-actions {
   width: 74.6988%;
   float: right;
@@ -1731,7 +1752,9 @@ header.listing-excerpt {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #bababa; }
 #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass {
   width: 48.78049%;
   float: left; }
@@ -1797,101 +1820,129 @@ header.listing-excerpt {
   width: 66.48936%;
   float: left;
   margin-right: 0.53191%; }
+  #wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-label > label, #wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-label > span {
+    display: block; }
 #wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-html {
   width: 32.97872%;
   float: right;
   margin-right: 0; }
   #wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-html input {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0; }
 
-.wpbdp-listing-form .category {
-  font-weight: normal;
-  margin-top: 0em;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
-  margin-bottom: 1.5em;
-  padding-left: 1.25373%;
-  padding-right: 1.25373%;
-  color: #ffffff;
-  background: #1B3B50; }
-.wpbdp-listing-form .wpbdp-form-field-html li {
-  min-height: 3.15em; }
-.wpbdp-listing-form .wpbdp-form-field-html > li {
-  border-radius: 4px;
-  border: 1px solid #bababa;
-  box-sizing: border-box;
-  background-color: #FFFFFF;
-  list-style: outside none none;
-  overflow: hidden;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin-top: 0.45em;
-  margin-bottom: 0.45em;
-  padding-left: 0px;
-  padding-right: 0px;
-  font-size: 0.875em;
-  line-height: 1.71429em;
-  font-family: PMN_Roman, sans-serif, sans-serif; }
-  .wpbdp-listing-form .wpbdp-form-field-html > li li {
-    width: 50%;
-    float: left;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    clear: both; }
-    .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(2n + 1) {
+.wpbdp-listing-form {
+  vertical-align: bottom; }
+  .wpbdp-listing-form .wpbdp-form-field-type-url .wpbdp-form-field-html > * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left; }
+    .wpbdp-listing-form .wpbdp-form-field-type-url .wpbdp-form-field-html > *:nth-child(2n + 1) {
+      width: 24.69136%;
       margin-left: 0;
       margin-right: -100%;
       clear: both;
       margin-left: 0; }
-    .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(2n + 2) {
-      margin-left: 50%;
+    .wpbdp-listing-form .wpbdp-form-field-type-url .wpbdp-form-field-html > *:nth-child(2n + 2) {
+      width: 74.07407%;
+      margin-left: 25.92593%;
       margin-right: -100%;
       clear: none; }
-    @media (min-width: 680px) and (max-width: 880px) {
-      .wpbdp-listing-form .wpbdp-form-field-html > li li {
-        width: 33.33333%;
-        float: left; }
-        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 1) {
-          margin-left: 0;
-          margin-right: -100%;
-          clear: both;
-          margin-left: 0; }
-        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 2) {
-          margin-left: 33.33333%;
-          margin-right: -100%;
-          clear: none; }
-        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 3) {
-          margin-left: 66.66667%;
-          margin-right: -100%;
-          clear: none; } }
-    @media (min-width: 880px) {
-      .wpbdp-listing-form .wpbdp-form-field-html > li li {
-        width: 25%;
-        float: left; }
-        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 1) {
-          margin-left: 0;
-          margin-right: -100%;
-          clear: both;
-          margin-left: 0; }
-        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 2) {
-          margin-left: 25%;
-          margin-right: -100%;
-          clear: none; }
-        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 3) {
-          margin-left: 50%;
-          margin-right: -100%;
-          clear: none; }
-        .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 4) {
-          margin-left: 75%;
-          margin-right: -100%;
-          clear: none; } }
-.wpbdp-listing-form li, .wpbdp-listing-form ul {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px; }
+  .wpbdp-listing-form .wpbdp-form-field-label {
+    padding-bottom: 1.5em; }
+    .wpbdp-listing-form .wpbdp-form-field-label > label {
+      display: block; }
+    .wpbdp-listing-form .wpbdp-form-field-label > span {
+      font-weight: normal;
+      display: block; }
+  .wpbdp-listing-form .category {
+    font-weight: normal;
+    margin-top: 0em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-bottom: 1.5em;
+    padding-left: 1.25373%;
+    padding-right: 1.25373%;
+    color: #ffffff;
+    background: #1B3B50; }
+  .wpbdp-listing-form .wpbdp-form-field-html li {
+    min-height: 3.15em; }
+  .wpbdp-listing-form .wpbdp-form-field-html > li {
+    border-radius: 4px;
+    border: 1px solid #bababa;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    list-style: outside none none;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.45em;
+    margin-bottom: 0.45em;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 0.875em;
+    line-height: 1.71429em;
+    font-family: PMN_Roman, sans-serif, sans-serif; }
+    .wpbdp-listing-form .wpbdp-form-field-html > li li {
+      width: 50%;
+      float: left;
+      padding-left: 0.3em;
+      padding-right: 0.3em;
+      clear: both; }
+      .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(2n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(2n + 2) {
+        margin-left: 50%;
+        margin-right: -100%;
+        clear: none; }
+      @media (min-width: 680px) and (max-width: 880px) {
+        .wpbdp-listing-form .wpbdp-form-field-html > li li {
+          width: 33.33333%;
+          float: left; }
+          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 1) {
+            margin-left: 0;
+            margin-right: -100%;
+            clear: both;
+            margin-left: 0; }
+          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 2) {
+            margin-left: 33.33333%;
+            margin-right: -100%;
+            clear: none; }
+          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 3) {
+            margin-left: 66.66667%;
+            margin-right: -100%;
+            clear: none; } }
+      @media (min-width: 880px) {
+        .wpbdp-listing-form .wpbdp-form-field-html > li li {
+          width: 25%;
+          float: left; }
+          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 1) {
+            margin-left: 0;
+            margin-right: -100%;
+            clear: both;
+            margin-left: 0; }
+          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 2) {
+            margin-left: 25%;
+            margin-right: -100%;
+            clear: none; }
+          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 3) {
+            margin-left: 50%;
+            margin-right: -100%;
+            clear: none; }
+          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 4) {
+            margin-left: 75%;
+            margin-right: -100%;
+            clear: none; } }
+  .wpbdp-listing-form li, .wpbdp-listing-form ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

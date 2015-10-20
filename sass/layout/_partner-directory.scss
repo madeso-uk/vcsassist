@@ -31,6 +31,36 @@
     @include button($color__background-button, 4px);
     @include button-style;
   }
+	.widget_vcs_taxonomy {
+    @include widgetify;
+    @include pad(0);
+    @include rhythm-margins(0.5);
+    input {
+      margin: 0;
+      border-left: 0px;
+      border-right: 0px;
+      border-top: 0px;
+      border-radius: 0px;
+      padding: 0;
+      &:last-child { border-bottom: 0px;}
+      @include adjust-font-size-to(14px);
+      @include rhythm-padding(0.3);
+      @include span(full border-box inside);
+      @include susy-breakpoint(max-width $bp-screen) {
+        @include span(full clearfix);
+        &:nth-child(2n+2) { // gallery from .button fix
+          margin: 0;
+          clear: both;
+        }
+      }
+    }
+    .widget-title {
+      @extend h5;
+      background-color: $vcsblue;
+      color: $color__text-alt;
+      @include pad(0.5rem)
+    }
+  }
 }
 /*
  * listing pages
@@ -248,25 +278,34 @@ header.listing-excerpt {
     @extend h4;
   }
 	.category {
-    @extend h5;
-    color: lighten($color__text-main, 10);
+    // @extend h5;
+    font-weight: normal;
+    @include rhythm(0, 0.2, 0.2, 1 );
+    @include pad(0.2);
+    color: $color__text-alt;
+    // color: lighten($color__text-main, 10);
+    background: $vcsblue;
   }
-  .wpbdp-form-field-html>li{
-    border-radius: 4px;
-    border: 1px solid darken($color__background-button, 10);
-    @include rhythm(0.2, 0.2);
-    @include adjust-font-size-to(16px);
-    font-family: $font__heading, sans-serif, sans-serif;
-    // @include margin-trailer(1);
-    li {
-      @include gallery(1 of 2);
-      @include susy-breakpoint($bp-screen $bp-largescreen) {
-        @include gallery(1 of 3);
+  .wpbdp-form-field-html {
+    li { min-height: rhythm(2.1)}
+    >li{
+      @include widgetify;
+      @include rhythm-margins(0.3);
+      @include pad(0px);
+      @include adjust-font-size-to(14px);
+      font-family: $font__heading, sans-serif, sans-serif;
+      // @include margin-trailer(1);
+      li {
+        @include gallery(1 of 2 0);
+        @include pad(0.3em);
+        @include susy-breakpoint($bp-screen $bp-largescreen) {
+          @include gallery(1 of 3 0);
+        }
+        @include susy-breakpoint($bp-largescreen) {
+          @include gallery(1 of 4 0);
+        }
+        clear: both;
       }
-      @include susy-breakpoint($bp-largescreen) {
-        @include gallery(1 of 4);
-      }
-      clear: both;
     }
   }
 

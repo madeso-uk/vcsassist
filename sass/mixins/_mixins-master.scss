@@ -26,13 +26,13 @@
 	clear: both;
 }
 
-@mixin widget-outline {
-	border-radius: 4px;
+@mixin widget-outline($rad: 4px) {
+	border-radius: $rad;
 	border: 1px solid $color__widget-border;
 	box-sizing: border-box;
 }
-@mixin widgetify {
-	@include widget-outline;
+@mixin widgetify($rad: 4px) {
+	@include widget-outline($rad);
 	background-color: $color__background-widget;
 	list-style: outside none none;
 	overflow: hidden;
@@ -45,7 +45,7 @@
   text-shadow: none;
   white-space: normal;
 	&:hover {
-    background-color: $vcsblue;
+    background-color: $vcsgreen;
     color: $color__text-alt;
     & :link {
       color: $color__text-alt;

@@ -1746,7 +1746,7 @@ header.listing-excerpt {
 /*
  * edit listing page
  */
-#wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field {
+#wpbdp-submit-page .wpbdp-form-field {
   clear: both;
   width: 100%;
   float: left;
@@ -1755,78 +1755,79 @@ header.listing-excerpt {
   margin-bottom: 1.5em;
   padding-bottom: 1.5em;
   border-bottom: 1px solid #bababa; }
-#wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass {
+#wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li {
   width: 48.78049%;
-  float: left; }
-  #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(2n + 1) {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px; }
+  #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(2n + 1) {
     margin-left: 0;
     margin-right: -100%;
     clear: both;
     margin-left: 0; }
-  #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(2n + 2) {
+  #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(2n + 2) {
     margin-left: 51.21951%;
     margin-right: -100%;
     clear: none; }
   @media (min-width: 680px) and (max-width: 880px) {
-    #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass {
+    #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li {
       width: 32.25806%;
       float: left; }
-      #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(3n + 1) {
+      #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(3n + 1) {
         margin-left: 0;
         margin-right: -100%;
         clear: both;
         margin-left: 0; }
-      #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(3n + 2) {
+      #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(3n + 2) {
         margin-left: 33.87097%;
         margin-right: -100%;
         clear: none; }
-      #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(3n + 3) {
+      #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(3n + 3) {
         margin-left: 67.74194%;
         margin-right: -100%;
         clear: none; } }
   @media (min-width: 880px) {
-    #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass {
+    #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li {
       width: 24.09639%;
       float: left; }
-      #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(4n + 1) {
+      #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(4n + 1) {
         margin-left: 0;
         margin-right: -100%;
         clear: both;
         margin-left: 0; }
-      #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(4n + 2) {
+      #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(4n + 2) {
         margin-left: 25.3012%;
         margin-right: -100%;
         clear: none; }
-      #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(4n + 3) {
+      #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(4n + 3) {
         margin-left: 50.60241%;
         margin-right: -100%;
         clear: none; }
-      #wpbdp-submit-page:not(.step-category-selection) .wpbdmcheckboxclass:nth-child(4n + 4) {
+      #wpbdp-submit-page .wpbdp-form-field-type-checkbox .children > li:nth-child(4n + 4) {
         margin-left: 75.90361%;
         margin-right: -100%;
         clear: none; } }
-#wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-inner .wordcounter {
+#wpbdp-submit-page .wpbdp-form-field-inner .wordcounter {
   display: none; }
-#wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-inner .over {
+#wpbdp-submit-page .wpbdp-form-field-inner .over {
   background-color: red !important;
   padding: 4px;
   color: #ffffff; }
-#wpbdp-submit-page:not(.step-category-selection) textarea {
+#wpbdp-submit-page textarea {
   height: 250px; }
-#wpbdp-submit-page:not(.step-category-selection) label {
-  padding-right: 1rem;
-  font-weight: bold; }
-#wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-label {
+#wpbdp-submit-page label {
+  padding-right: 1rem; }
+#wpbdp-submit-page .wpbdp-form-field-type-textfield .wpbdp-form-field-label {
   width: 66.48936%;
   float: left;
   margin-right: 0.53191%; }
-  #wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-label > label, #wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-label > span {
+  #wpbdp-submit-page .wpbdp-form-field-type-textfield .wpbdp-form-field-label > label, #wpbdp-submit-page .wpbdp-form-field-type-textfield .wpbdp-form-field-label > span {
     display: block; }
-#wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-html {
+#wpbdp-submit-page .wpbdp-form-field-type-textfield .wpbdp-form-field-inner {
   width: 32.97872%;
   float: right;
   margin-right: 0; }
-  #wpbdp-submit-page:not(.step-category-selection) .wpbdp-form-field-type-textfield .wpbdp-form-field-html input {
+  #wpbdp-submit-page .wpbdp-form-field-type-textfield .wpbdp-form-field-inner input {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
@@ -1868,8 +1869,6 @@ header.listing-excerpt {
     padding-right: 1.25373%;
     color: #ffffff;
     background: #1B3B50; }
-  .wpbdp-listing-form .wpbdp-form-field-html li {
-    min-height: 3.15em; }
   .wpbdp-listing-form .wpbdp-form-field-html > li {
     border-radius: 4px;
     border: 1px solid #bababa;
@@ -1886,63 +1885,125 @@ header.listing-excerpt {
     font-size: 0.875em;
     line-height: 1.71429em;
     font-family: PMN_Roman, sans-serif, sans-serif; }
-    .wpbdp-listing-form .wpbdp-form-field-html > li li {
-      width: 50%;
+  .wpbdp-listing-form li {
+    min-height: 3.15em; }
+  .wpbdp-listing-form ul, .wpbdp-listing-form li {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
+
+#wpbdp-search-form-wrapper .wpbdp-form-field-label-employees .label, #wpbdp-search-form-wrapper .category {
+  font-weight: normal;
+  margin-top: 0em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-bottom: 1.5em;
+  padding-left: 1.25373%;
+  padding-right: 1.25373%;
+  color: #ffffff;
+  background: #1B3B50; }
+#wpbdp-search-form-wrapper li {
+  min-height: 3.15em; }
+#wpbdp-search-form-wrapper ul, #wpbdp-search-form-wrapper li {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px; }
+#wpbdp-search-form-wrapper .wpbdp-search-filter {
+  clear: both; }
+  #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea, #wpbdp-search-form-wrapper .wpbdp-search-filter.url {
+    margin-top: 0.3em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.3em; }
+    #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .label, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .label {
+      width: 32.97872%;
       float: left;
-      padding-left: 0.3em;
-      padding-right: 0.3em;
-      clear: both; }
-      .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(2n + 1) {
+      margin-right: 0.53191%;
+      margin-top: 0.3em;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
+      margin-bottom: 0.3em; }
+      #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .label > span, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .label > span, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .label > span {
+        display: block; }
+    #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .field.inner, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .field.inner, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .field.inner {
+      width: 66.48936%;
+      float: right;
+      margin-right: 0; }
+      #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .field.inner input, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .field.inner input, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .field.inner input {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-right: 0; }
+  #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li {
+    border-radius: 4px;
+    border: 1px solid #bababa;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    list-style: outside none none;
+    overflow: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin-top: 0.45em;
+    margin-bottom: 0.45em;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 0.875em;
+    line-height: 1.71429em;
+    font-family: PMN_Roman, sans-serif, sans-serif; }
+    #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li {
+      width: 48.78049%;
+      float: left;
+      padding-left: 10px;
+      padding-right: 10px; }
+      #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(2n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(2n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(2n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(2n + 1) {
         margin-left: 0;
         margin-right: -100%;
         clear: both;
         margin-left: 0; }
-      .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(2n + 2) {
-        margin-left: 50%;
+      #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(2n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(2n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(2n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(2n + 2) {
+        margin-left: 51.21951%;
         margin-right: -100%;
         clear: none; }
       @media (min-width: 680px) and (max-width: 880px) {
-        .wpbdp-listing-form .wpbdp-form-field-html > li li {
-          width: 33.33333%;
+        #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li {
+          width: 32.25806%;
           float: left; }
-          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 1) {
+          #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(3n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(3n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(3n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(3n + 1) {
             margin-left: 0;
             margin-right: -100%;
             clear: both;
             margin-left: 0; }
-          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 2) {
-            margin-left: 33.33333%;
+          #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(3n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(3n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(3n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(3n + 2) {
+            margin-left: 33.87097%;
             margin-right: -100%;
             clear: none; }
-          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(3n + 3) {
-            margin-left: 66.66667%;
+          #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(3n + 3), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(3n + 3), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(3n + 3), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(3n + 3) {
+            margin-left: 67.74194%;
             margin-right: -100%;
             clear: none; } }
       @media (min-width: 880px) {
-        .wpbdp-listing-form .wpbdp-form-field-html > li li {
-          width: 25%;
+        #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li {
+          width: 24.09639%;
           float: left; }
-          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 1) {
+          #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(4n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(4n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(4n + 1), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(4n + 1) {
             margin-left: 0;
             margin-right: -100%;
             clear: both;
             margin-left: 0; }
-          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 2) {
-            margin-left: 25%;
+          #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(4n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(4n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(4n + 2), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(4n + 2) {
+            margin-left: 25.3012%;
             margin-right: -100%;
             clear: none; }
-          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 3) {
-            margin-left: 50%;
+          #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(4n + 3), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(4n + 3), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(4n + 3), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(4n + 3) {
+            margin-left: 50.60241%;
             margin-right: -100%;
             clear: none; }
-          .wpbdp-listing-form .wpbdp-form-field-html > li li:nth-child(4n + 4) {
-            margin-left: 75%;
+          #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass:nth-child(4n + 4), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li:nth-child(4n + 4), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass:nth-child(4n + 4), #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li:nth-child(4n + 4) {
+            margin-left: 75.90361%;
             margin-right: -100%;
             clear: none; } }
-  .wpbdp-listing-form li, .wpbdp-listing-form ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

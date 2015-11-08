@@ -39,6 +39,13 @@
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
+@mixin widget-header() {
+  font-weight: normal;
+  @include rhythm(0, 0.2, 0.2, 1 );
+  @include pad(0.2);
+  color: $color__text-alt;
+  background: $vcsblue;
+}
 @mixin button($butcol: $color__background-button, $corner: 2em) {
   background-color: $butcol;
   box-shadow: none;
@@ -252,4 +259,44 @@
   background: nth(nth($color-stops, 1), 1);
   background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
   background: linear-gradient($direction, $color-stops);
+}
+
+// partials
+@mixin flatten-checkbox() {
+  @include gallery(1 of 2);
+  @include pad(10px);
+  @include susy-breakpoint($bp-screen $bp-largescreen) {
+    @include gallery(1 of 3);
+  }
+  @include susy-breakpoint($bp-largescreen) {
+    @include gallery(1 of 4);
+  }
+}
+
+@mixin form-field-html {
+      @include widgetify;
+      @include rhythm-margins(0.3);
+      @include pad(0px);
+      @include adjust-font-size-to(14px);
+      font-family: $font__heading, sans-serif, sans-serif;
+}
+
+@mixin vcspd-list-style() {
+  li { min-height: rhythm(2.1)}
+  ul, li {
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+  }
+}
+
+// .wpbdp-form-field-label { // @include full;
+@mixin vcspd-textinput-style-label($span : 6 of 9 first nested) {
+    @include span($span);
+    >label, >span { display: block;}
+}
+// .wpbdp-form-field-inner, .field.inner {
+@mixin vcspd-textinput-style-input($span : 3 of 9 last) {
+  @include span($span);
+  input { @include span(full border-box);}
 }

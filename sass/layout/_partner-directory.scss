@@ -246,21 +246,15 @@ header.listing-excerpt {
 /*
  * edit listing page
  */
-#wpbdp-submit-page:not(.step-category-selection) {
+#wpbdp-submit-page {
   .wpbdp-form-field {
     @include full(nested);
     @include margin-trailer(1);
     @include padding-trailer(1);
     border-bottom: $vcs-button;
   }
-  .wpbdmcheckboxclass {
-    @include gallery(1 of 2);
-    @include susy-breakpoint($bp-screen $bp-largescreen) {
-      @include gallery(1 of 3);
-    }
-    @include susy-breakpoint($bp-largescreen) {
-      @include gallery(1 of 4);
-    }
+  .wpbdp-form-field-type-checkbox .children>li {
+    @include flatten-checkbox();
   }
   .wpbdp-form-field-inner {
     .wordcounter {
@@ -277,35 +271,21 @@ header.listing-excerpt {
   }
   label { 
     padding-right: 1rem;
-    font-weight: bold;
+    // font-weight: bold;
   }
   .wpbdp-form-field-type-textfield {
-    .wpbdp-form-field-label {
-      // @include full;
-      @include span(6 of 9 first nested);
-      >label, >span { display: block;}
-
-    }
-    .wpbdp-form-field-html {
-      // @include full;
-      @include span(3 of 9 last);
-      input { @include span(full border-box);}
-    }
+    .wpbdp-form-field-label { @include vcspd-textinput-style-label(); }
+    .wpbdp-form-field-inner {@include vcspd-textinput-style-input(); }
   }
 }
 .wpbdp-listing-form {
+  // Submit page
   vertical-align: bottom;
   .wpbdp-form-field-type-url {
 
     .wpbdp-form-field-html>* {
       @include gallery(1 of (1 3) border-box);
     }
-    // .sublabel { 
-    //   @include span(1 of 4 first);
-    // }
-    // .intextbox {
-    //   @include span(3 of 4 last);
-    // }
   }
   .wpbdp-form-field-label {
     @include padding-trailer(1);
@@ -319,41 +299,31 @@ header.listing-excerpt {
       display: block;
     }
   }
-	.category {
-    // @extend h5;
-    font-weight: normal;
-    @include rhythm(0, 0.2, 0.2, 1 );
-    @include pad(0.2);
-    color: $color__text-alt;
-    // color: lighten($color__text-main, 10);
-    background: $vcsblue;
-  }
-  .wpbdp-form-field-html {
-    li { min-height: rhythm(2.1)}
-    >li{
-      @include widgetify;
-      @include rhythm-margins(0.3);
-      @include pad(0px);
-      @include adjust-font-size-to(14px);
-      font-family: $font__heading, sans-serif, sans-serif;
-      // @include margin-trailer(1);
-      li {
-        @include gallery(1 of 2 0);
-        @include pad(0.3em);
-        @include susy-breakpoint($bp-screen $bp-largescreen) {
-          @include gallery(1 of 3 0);
-        }
-        @include susy-breakpoint($bp-largescreen) {
-          @include gallery(1 of 4 0);
-        }
-        clear: both;
-      }
-    }
-  }
+	.category { @include widget-header(); }
+  .wpbdp-form-field-html>li { @include form-field-html; }
 
-	li, ul {
-		list-style-type: none;
-		padding: 0px;
-		margin: 0px;
-	}
+  @include vcspd-list-style();
+}
+
+#wpbdp-search-form-wrapper {
+	.wpbdp-form-field-label-employees .label, .category { @include widget-header(); }
+  @include vcspd-list-style();
+  
+  .wpbdp-search-filter {
+    &.textfield, &.textarea, &.url {
+      // text fields
+      .label {
+        @include vcspd-textinput-style-label(3 of 9 first nested); 
+        @include rhythm(0.2, 0.2);
+      }
+      .field.inner { @include vcspd-textinput-style-input(6 of 9 last); }
+      @include rhythm(0.2, 0.2);
+    } 
+    &.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta,
+    &.wpbdp-form-field-label-categories .field.inner>li {
+        @include form-field-html;
+        .wpbdmcheckboxclass, .children>li {@include flatten-checkbox();}
+      }
+    clear: both;
+  }
 }

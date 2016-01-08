@@ -9,4 +9,5 @@
   <div id="vcs_supporters" class="widget-area" role="complementary">
     <?php dynamic_sidebar( 'vcsassist_supporters' ); ?>
   </div><!-- #secondary -->
+<?php else : include('inc/sponsors.php'); ?>
 <?php endif; ?>

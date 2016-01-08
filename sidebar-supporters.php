@@ -5,10 +5,8 @@
  * @package _s
  */
 
-if ( ! is_active_sidebar( 'vcsassist_supporters' ) ) {
-	return;
-}
-?>
-<div id="vcs_supporters" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'vcsassist_supporters' ); ?>
-</div><!-- #secondary -->
+ if ( is_active_sidebar( 'vcsassist_supporters' ) ) : ?>
+  <div id="vcs_supporters" class="widget-area" role="complementary">
+    <?php dynamic_sidebar( 'vcsassist_supporters' ); ?>
+  </div><!-- #secondary -->
+<?php endif; ?>

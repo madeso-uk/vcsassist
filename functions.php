@@ -66,10 +66,18 @@ function _s_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+  add_image_size( 'vcs_suporters_img', 150, 150 ); // 300 pixels wide (and unlimited height)
 }
 endif; // _s_setup
 add_action( 'after_setup_theme', '_s_setup' );
 
+add_filter( 'image_size_names_choose', 'vcs_custom_sizes' );
+ 
+function vcs_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'vcs_suporters_img' => __( 'Supporter logo' ),
+    ) );
+}
 /**
  * Register widget area.
  *
@@ -131,7 +139,7 @@ function _s_widgets_init() {
 		'after_title'   => '</h1>',
 	) );
 	register_sidebar( array(
-		'name'          => __( 'Supporters', '_s' ),
+		'name'          => __( 'VCS Assist Supporters', '_s' ),
 		'id'            => 'vcsassist_supporters',
 		'description'   => 'VCS Suppporters sidebar',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',

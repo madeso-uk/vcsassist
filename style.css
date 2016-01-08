@@ -940,6 +940,52 @@ header#masthead aside#header-space {
       float: right;
       margin-right: 0; } }
 
+#vcs_supporters {
+  min-height: 200px;
+  text-align: center; }
+  #vcs_supporters .widget {
+    clear: both;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 680px) {
+      #vcs_supporters .widget {
+        width: 16%;
+        float: left; }
+        #vcs_supporters .widget:nth-child(6n + 1) {
+          margin-left: 0;
+          margin-right: -100%;
+          clear: both;
+          margin-left: 0; }
+        #vcs_supporters .widget:nth-child(6n + 2) {
+          margin-left: 16.8%;
+          margin-right: -100%;
+          clear: none; }
+        #vcs_supporters .widget:nth-child(6n + 3) {
+          margin-left: 33.6%;
+          margin-right: -100%;
+          clear: none; }
+        #vcs_supporters .widget:nth-child(6n + 4) {
+          margin-left: 50.4%;
+          margin-right: -100%;
+          clear: none; }
+        #vcs_supporters .widget:nth-child(6n + 5) {
+          margin-left: 67.2%;
+          margin-right: -100%;
+          clear: none; }
+        #vcs_supporters .widget:nth-child(6n + 6) {
+          margin-left: 84%;
+          margin-right: -100%;
+          clear: none; } }
+  #vcs_supporters .widget_sp_image, #vcs_supporters .simple-image {
+    line-height: 150px; }
+    #vcs_supporters .widget_sp_image img, #vcs_supporters .simple-image img {
+      vertical-align: bottom; }
+  #vcs_supporters .widget_sp_image-description {
+    font-size: 0.6875em;
+    line-height: 2.18182em; }
+
 body.single #content, body.page #content {
   background-color: #F5F5F5; }
 
@@ -2055,37 +2101,273 @@ object {
 12.2 Galleries
 --------------------------------------------------------------*/
 .gallery {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5em;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
 
 .gallery-item {
   display: inline-block;
   text-align: center;
   vertical-align: top;
-  width: 100%; }
-
-.gallery-columns-2 .gallery-item {
-  max-width: 50%; }
-
-.gallery-columns-3 .gallery-item {
-  max-width: 33.33%; }
-
-.gallery-columns-4 .gallery-item {
-  max-width: 25%; }
-
-.gallery-columns-5 .gallery-item {
-  max-width: 20%; }
-
-.gallery-columns-6 .gallery-item {
-  max-width: 16.66%; }
-
-.gallery-columns-7 .gallery-item {
-  max-width: 14.28%; }
-
-.gallery-columns-8 .gallery-item {
-  max-width: 12.5%; }
-
-.gallery-columns-9 .gallery-item {
-  max-width: 11.11%; }
+  width: 100%;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 680px) {
+    .gallery-columns-2 .gallery-item {
+      width: 48.78049%;
+      float: left; }
+      .gallery-columns-2 .gallery-item:nth-child(2n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .gallery-columns-2 .gallery-item:nth-child(2n + 2) {
+        margin-left: 51.21951%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 680px) {
+    .gallery-columns-3 .gallery-item {
+      width: 32.25806%;
+      float: left; }
+      .gallery-columns-3 .gallery-item:nth-child(3n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .gallery-columns-3 .gallery-item:nth-child(3n + 2) {
+        margin-left: 33.87097%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-3 .gallery-item:nth-child(3n + 3) {
+        margin-left: 67.74194%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 680px) {
+    .gallery-columns-4 .gallery-item {
+      width: 24.09639%;
+      float: left; }
+      .gallery-columns-4 .gallery-item:nth-child(4n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .gallery-columns-4 .gallery-item:nth-child(4n + 2) {
+        margin-left: 25.3012%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-4 .gallery-item:nth-child(4n + 3) {
+        margin-left: 50.60241%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-4 .gallery-item:nth-child(4n + 4) {
+        margin-left: 75.90361%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 680px) {
+    .gallery-columns-5 .gallery-item {
+      width: 19.23077%;
+      float: left; }
+      .gallery-columns-5 .gallery-item:nth-child(5n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .gallery-columns-5 .gallery-item:nth-child(5n + 2) {
+        margin-left: 20.19231%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-5 .gallery-item:nth-child(5n + 3) {
+        margin-left: 40.38462%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-5 .gallery-item:nth-child(5n + 4) {
+        margin-left: 60.57692%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-5 .gallery-item:nth-child(5n + 5) {
+        margin-left: 80.76923%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 680px) {
+    .gallery-columns-6 .gallery-item {
+      width: 16%;
+      float: left; }
+      .gallery-columns-6 .gallery-item:nth-child(6n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .gallery-columns-6 .gallery-item:nth-child(6n + 2) {
+        margin-left: 16.8%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-6 .gallery-item:nth-child(6n + 3) {
+        margin-left: 33.6%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-6 .gallery-item:nth-child(6n + 4) {
+        margin-left: 50.4%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-6 .gallery-item:nth-child(6n + 5) {
+        margin-left: 67.2%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-6 .gallery-item:nth-child(6n + 6) {
+        margin-left: 84%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 680px) {
+    .gallery-columns-7 .gallery-item {
+      width: 13.69863%;
+      float: left; }
+      .gallery-columns-7 .gallery-item:nth-child(7n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .gallery-columns-7 .gallery-item:nth-child(7n + 2) {
+        margin-left: 14.38356%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-7 .gallery-item:nth-child(7n + 3) {
+        margin-left: 28.76712%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-7 .gallery-item:nth-child(7n + 4) {
+        margin-left: 43.15068%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-7 .gallery-item:nth-child(7n + 5) {
+        margin-left: 57.53425%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-7 .gallery-item:nth-child(7n + 6) {
+        margin-left: 71.91781%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-7 .gallery-item:nth-child(7n + 7) {
+        margin-left: 86.30137%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 680px) {
+    .gallery-columns-8 .gallery-item {
+      width: 11.97605%;
+      float: left; }
+      .gallery-columns-8 .gallery-item:nth-child(8n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .gallery-columns-8 .gallery-item:nth-child(8n + 2) {
+        margin-left: 12.57485%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-8 .gallery-item:nth-child(8n + 3) {
+        margin-left: 25.1497%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-8 .gallery-item:nth-child(8n + 4) {
+        margin-left: 37.72455%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-8 .gallery-item:nth-child(8n + 5) {
+        margin-left: 50.2994%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-8 .gallery-item:nth-child(8n + 6) {
+        margin-left: 62.87425%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-8 .gallery-item:nth-child(8n + 7) {
+        margin-left: 75.4491%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-8 .gallery-item:nth-child(8n + 8) {
+        margin-left: 88.02395%;
+        margin-right: -100%;
+        clear: none; } }
+  @media (min-width: 680px) {
+    .gallery-columns-9 .gallery-item {
+      width: 10.6383%;
+      float: left; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 1) {
+        margin-left: 0;
+        margin-right: -100%;
+        clear: both;
+        margin-left: 0; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 2) {
+        margin-left: 11.17021%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 3) {
+        margin-left: 22.34043%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 4) {
+        margin-left: 33.51064%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 5) {
+        margin-left: 44.68085%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 6) {
+        margin-left: 55.85106%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 7) {
+        margin-left: 67.02128%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 8) {
+        margin-left: 78.19149%;
+        margin-right: -100%;
+        clear: none; }
+      .gallery-columns-9 .gallery-item:nth-child(9n + 9) {
+        margin-left: 89.3617%;
+        margin-right: -100%;
+        clear: none; } }
 
 .gallery-caption {
   display: block; }

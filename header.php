@@ -37,7 +37,7 @@
  			<button class="menu-toggle" aria-controls="menu" aria-expanded="false"><?php _e( 'Primary Menu', '_s' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
  		</nav><!-- #site-navigation -->
-	<?php if (is_home() ){ include('inc/sponsors.php'); }
+	<?php if (is_home() ){ get_sidebar('supporters'); }
  ?>
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">

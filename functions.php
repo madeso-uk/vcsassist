@@ -150,6 +150,24 @@ function _s_widgets_init() {
 }
 add_action( 'widgets_init', '_s_widgets_init' );
 
+add_filter('cWCdeveloperClasses','vcs_widgetclasses');
+
+function vcs_widgetclasses(){
+         $clsses['classes']=array(
+            array(
+									'class'=>'grid_full',
+									'desc'=>'Full width'
+            )
+        );   
+
+        $clsses['default']=array(       
+									'class'=>'',
+									'desc'=>'Normal Flow'
+                );  
+
+    return $clsses;         
+}
+
 /**
  * Enqueue scripts and styles.
  */

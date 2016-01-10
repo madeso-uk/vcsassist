@@ -52,6 +52,53 @@ header#masthead	{
 	}
 }
 
+// Supported logo box
+#vcs_supporters {
+  min-height: 200px;
+  text-align: center;
+  .widget_sp_image, .widget_simpleimage {
+      @include gallery(1 of 3);
+      @include susy-breakpoint($bp-screen) {
+        @include gallery(1 of 5);
+      }
+      &.grid_full {@include full(last);}
+    }
+    @include susy-breakpoint($bp-screen) {
+      &.col-2 {
+        .widget_sp_image, .widget_simpleimage { @include gallery(1 of 2); }
+          }
+      &.col-3 {
+        .widget_sp_image, .widget_simpleimage { @include gallery(1 of 3); }
+          }
+      &.col-4 {
+        .widget_sp_image, .widget_simpleimage { @include gallery(1 of 4); }
+          }
+      &.col-5 {
+        .widget_sp_image, .widget_simpleimage { @include gallery(1 of 5); }
+          }
+      &.col-6 {
+        .widget_sp_image, .widget_simpleimage { @include gallery(1 of 6); }
+          }
+      &.col-7 {
+        .widget_sp_image, .widget_simpleimage { @include gallery(1 of 7); }
+          }
+      }
+
+    .widget_sp_image, .simple-image {
+      line-height: 150px;
+      img {
+        vertical-align: middle;
+    }
+  }
+  .widget_sp_image-description, .st {
+    @include adjust-font-size-to(11px);
+  }
+  .widget_text:last-child {
+    @include full();
+    p {@include pad(0.5);}
+  }
+}
+
 // whole post content
 body.single #content, body.page #content {background-color: $vcsgrey-light;};
 

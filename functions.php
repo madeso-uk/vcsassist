@@ -66,10 +66,18 @@ function _s_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+  add_image_size( 'vcs_suporters_img', 150, 150 ); // 300 pixels wide (and unlimited height)
 }
 endif; // _s_setup
 add_action( 'after_setup_theme', '_s_setup' );
 
+add_filter( 'image_size_names_choose', 'vcs_custom_sizes' );
+ 
+function vcs_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'vcs_suporters_img' => __( 'Supporter logo' ),
+    ) );
+}
 /**
  * Register widget area.
  *
@@ -130,8 +138,35 @@ function _s_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'VCS Assist Supporters', '_s' ),
+		'id'            => 'vcsassist_supporters',
+		'description'   => 'VCS Suppporters sidebar',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h1 class="widget-title">',
+		'after_title'   => '</h1>',
+	) );
 }
 add_action( 'widgets_init', '_s_widgets_init' );
+
+add_filter('cWCdeveloperClasses','vcs_widgetclasses');
+
+function vcs_widgetclasses(){
+         $clsses['classes']=array(
+            array(
+									'class'=>'grid_full',
+									'desc'=>'Full width'
+            )
+        );   
+
+        $clsses['default']=array(       
+									'class'=>'',
+									'desc'=>'Normal Flow'
+                );  
+
+    return $clsses;         
+}
 
 /**
  * Enqueue scripts and styles.

@@ -25,7 +25,7 @@
 					-->
 				</ul>
 		        <div class="footer-logo">
-		          <img src="http://www.lvsc.org.uk/media/164941/lvscandunitedwayfooterlogo.png" alt="LVSC United Way">
+		          <img src="http://lvsc.org.uk/media/189761/lvsc-logo_small.png" alt="LVSC United Way">
 		        </div>
 		        <div class="address">LVSC, 200a Pentonville Road, London N1 9JP Tel 020 7832 5830 Email info@lvsc.org.uk</div>
 		        <div class="social">

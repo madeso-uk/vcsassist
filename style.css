@@ -4,7 +4,7 @@ Theme URI: http://www.madeso.uk/
 Author: madeso
 Author URI: http://www.madeso.uk/
 Description: VCS Assist theme is the Wordpress theme for www.vcsassist.org.uk. <br />Most revent version can be found https://github.com/oh-/vcsassist/archive/master.zip<br />Recomended to install VCS Assist site plugin along side for full functionality which can be found https://github.com/oh-/vcsassist/archive/p-master.zip <br />This is theme is built on Underscores http://underscores.me/ Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-Version: 0.2.8.2
+Version: 0.2.8.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: _s
@@ -2107,6 +2107,16 @@ header.listing-excerpt {
   list-style-type: none;
   padding: 0px;
   margin: 0px; }
+#wpbdp-search-form-wrapper .wpbdp-form-field-type-checkbox > .wpbdp-search-field-label {
+  font-weight: normal;
+  margin-top: 0em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-bottom: 1.5em;
+  padding-left: 1.25373%;
+  padding-right: 1.25373%;
+  color: #ffffff;
+  background: #1B3B50; }
 #wpbdp-search-form-wrapper .wpbdp-search-filter {
   clear: both; }
   #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea, #wpbdp-search-form-wrapper .wpbdp-search-filter.url {
@@ -2114,7 +2124,7 @@ header.listing-excerpt {
     padding-top: 0.3em;
     padding-bottom: 0.3em;
     margin-bottom: 0.3em; }
-    #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .label, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .label {
+    #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .wpbdp-search-field-label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .wpbdp-search-field-label, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .wpbdp-search-field-label {
       width: 32.97872%;
       float: left;
       margin-right: 0.53191%;
@@ -2122,7 +2132,7 @@ header.listing-excerpt {
       padding-top: 0.3em;
       padding-bottom: 0.3em;
       margin-bottom: 0.3em; }
-      #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .label > span, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .label > span, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .label > span {
+      #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .wpbdp-search-field-label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .wpbdp-search-field-label > span, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .wpbdp-search-field-label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .wpbdp-search-field-label > span, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .wpbdp-search-field-label > label, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .wpbdp-search-field-label > span {
         display: block; }
     #wpbdp-search-form-wrapper .wpbdp-search-filter.textfield .field.inner, #wpbdp-search-form-wrapper .wpbdp-search-filter.textarea .field.inner, #wpbdp-search-form-wrapper .wpbdp-search-filter.url .field.inner {
       width: 66.48936%;
@@ -2150,7 +2160,8 @@ header.listing-excerpt {
     padding-right: 0px;
     font-size: 0.875em;
     line-height: 1.71429em;
-    font-family: PMN_Roman, sans-serif, sans-serif; }
+    font-family: PMN_Roman, sans-serif, sans-serif;
+    padding-bottom: 1.5em; }
     #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .wpbdmcheckboxclass, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-type-checkbox.wpbdp-form-field-association-meta .children > li, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .wpbdmcheckboxclass, #wpbdp-search-form-wrapper .wpbdp-search-filter.wpbdp-form-field-label-categories .field.inner > li .children > li {
       width: 48.78049%;
       float: left;
@@ -2203,6 +2214,9 @@ header.listing-excerpt {
             margin-left: 75.90361%;
             margin-right: -100%;
             clear: none; } }
+#wpbdp-search-form-wrapper input[type="submit"], #wpbdp-search-form-wrapper input[type="reset"] {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
 
 /*--------------------------------------------------------------
 11.0 Infinite scroll

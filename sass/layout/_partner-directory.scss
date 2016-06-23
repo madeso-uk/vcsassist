@@ -306,13 +306,15 @@ header.listing-excerpt {
 }
 
 #wpbdp-search-form-wrapper {
-	.wpbdp-form-field-label-employees .label, .category { @include widget-header(); }
+	.wpbdp-form-field-label-employees .label, .category {
+    @include widget-header(); }
   @include vcspd-list-style();
-  
+  .wpbdp-form-field-type-checkbox>.wpbdp-search-field-label {
+    @include widget-header(); }
   .wpbdp-search-filter {
     &.textfield, &.textarea, &.url {
       // text fields
-      .label {
+      .wpbdp-search-field-label {
         @include vcspd-textinput-style-label(3 of 9 first nested); 
         @include rhythm(0.2, 0.2);
       }
@@ -323,7 +325,12 @@ header.listing-excerpt {
     &.wpbdp-form-field-label-categories .field.inner>li {
         @include form-field-html;
         .wpbdmcheckboxclass, .children>li {@include flatten-checkbox();}
+        @include padding-trailer(1);
+        ;
       }
     clear: both;
+  }
+  input[type="submit"], input[type="reset"] {
+    @include rhythm-margins(1);
   }
 }
